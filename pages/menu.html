@@ -10,104 +10,282 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="../assets/img/logo.png" alt="Logo de Black Powers">
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="menu.html">MENÚ</a></li>
-                <li><a href="promos.html">PROMOCIONES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="pedidos.html">PEDIDOS</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/logo.png" alt="Logo de Black Powers"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item">
+                            <a class="" href="../pages/menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="../pages/promos.html">PROMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="../pages/pedidos.html">PEDIDOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="../pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main> 
+    <main class="mainMenu"> 
+        <section class="heroHamburguesas">
+            <article class="art-hamburguesas">
+                <div class="text-hero">
+                    <div class="name-ubi">
+                        <span class="dot"></span> 
+                        <h2> 
+                            SMASH BURGUERS Y PLANCHA AL FUEGO
+                        </h2>
+                    </div>
+                    <h1>
+                        Carta <span>Black Powers</span>
+                    </h1>
+                    <p>
+                        Medallones smasheados de 110g, quesos fundidos, panes <br> brioche artesanales y salsas secretas caseras
+                    </p>
+                </div>
+                <article class="art-right">
+                    <div class="children-hero">
+                        <h4>
+                            110g
+                        </h4>  
+                        <p>
+                            CARNE SMASH
+                        </p>
+                    </div>
+                    <div class="children-hero">
+                        <span>
+                            <h4>
+                                100%
+                            </h4> 
+                        </span>
+                        <p>
+                            PLANCHA & SABOR
+                        </p>  
+                    </div>
+                </article>
+            </article> 
+            <article class="infoDiasHorarios">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>clock-outline</title><path fill="#FFC665" d="M12 20a8 8 0 0 0 8-8a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10a10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67l-.75 1.23L11 13V7z"/></svg>
+                    <p>
+                        Jueves a Domingos de 19:30 a 23:30hs · Hurlingham, Buenos Aires
+                    </p>
+                </div>
+            </article>
+        </section>
         <section class="hamburguesasSeccion">
-            <h2>
-                Conoce nuestras hamburguesas!
-            </h2>
+            <p>
+                SELECCION EXCLUSIVA
+            </p>
+            <h3>
+                Conoce nuestras <span>hamburguesas</span>
+            </h3>   
             <section class="hamburguesas">
-                <article class="hamburguesaHero">
-                    <h3>Burnt Onion</h3>  
-                    <p>Medallon doble Smasheado con Cebolla, dambo x3 y Salsa MVP</p>
+                <article class="card-bp-menu">
                     <img src="../assets/img/hamburguesas/BurntOnion.webp" alt="Hamburguesa Burnt Onion">
+                    <div>
+                        <h3>BURNT ONION</h3>
+                        <span>
+                            <p>
+                                SMASH
+                            </p>
+                        </span>
+                    </div>
+                    <p>Medallon doble Smasheado con Cebolla, dambo x3 y Salsa MVP</p>
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>message</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5686 16.353 C2.915 14.8839 2 12.9769 2 11 C2 6.5817 6.4772 3 12 3 C17.5228 3 22 6.5817 22 11 C22 15.4183 17.5228 19 12 19 C11.1845 19 10.3721 18.9202 9.5808 18.7624 L5 21 L4.5686 16.353 Z"/></svg>
+                        <a href="https://api.whatsapp.com/message/4JBG3H4MV5HTO1?autoload=1&app_absent=0&utm_source=ig" target="_blank">
+                            Pedir por WhatsApp
+                        </a>
+                    </button>
                 </article>
-                <article class="hamburguesaHero">
-                    <h3>Cheese B</h3>  
-                    <p>Medallon 100g, Doble Cheddar</p>
-                    <img src="../assets/img/hamburguesas/CheeseB.webp" alt="Hamburguesa Cheese B">
+                <article class="card-bp-menu">
+                    <img src="../assets/img/hamburguesas/CheeseB.webp" alt="Hamburguesa Cheese Burguer">
+                    <div>
+                        <h3>CHEESE B</h3>
+                        <span>
+                            <p>
+                                FAVORITA
+                            </p>
+                        </span>
+                    </div>
+                    <p>Medallon de 110g, doble cheddar</p>
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>message</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5686 16.353 C2.915 14.8839 2 12.9769 2 11 C2 6.5817 6.4772 3 12 3 C17.5228 3 22 6.5817 22 11 C22 15.4183 17.5228 19 12 19 C11.1845 19 10.3721 18.9202 9.5808 18.7624 L5 21 L4.5686 16.353 Z"/></svg>
+                        <a href="https://api.whatsapp.com/message/4JBG3H4MV5HTO1?autoload=1&app_absent=0&utm_source=ig" target="_blank">
+                            Pedir por WhatsApp
+                        </a>
+                    </button>
                 </article>
-                <article class="hamburguesaHero">
-                    <h3>Dijon</h3>  
-                    <p>Pan Brioche, Medallon 130g, Cheddar x2, Panceta, Cebolla Morada, Provolone y Salsa Dijon</p>
+                <article class="card-bp-menu">
                     <img src="../assets/img/hamburguesas/Dijon.webp" alt="Hamburguesa Dijon">
+                    <div>
+                        <h3>DIJON</h3>
+                        <span>
+                            <p>
+                                ESPECIAL
+                            </p>
+                        </span>
+                    </div>
+                    <p>Medallon de 110g, cheddar, panceta, cebolla morada, provolone, salsa Dijon</p>
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>message</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5686 16.353 C2.915 14.8839 2 12.9769 2 11 C2 6.5817 6.4772 3 12 3 C17.5228 3 22 6.5817 22 11 C22 15.4183 17.5228 19 12 19 C11.1845 19 10.3721 18.9202 9.5808 18.7624 L5 21 L4.5686 16.353 Z"/></svg>
+                        <a href="https://api.whatsapp.com/message/4JBG3H4MV5HTO1?autoload=1&app_absent=0&utm_source=ig" target="_blank">
+                            Pedir por WhatsApp
+                        </a>
+                    </button>
                 </article>
-                <article class="hamburguesaHero">
-                    <h3>Falkner</h3>  
-                    <p>Medallon 130g, Cheddar x2, Lechuga Francesa, Cebolla Morada y Tomate</p>
+                <article class="card-bp-menu">
                     <img src="../assets/img/hamburguesas/Falkner.webp" alt="Hamburguesa Falkner">
+                    <div>
+                        <h3>FALKNER</h3>
+                        <span>
+                            <p>
+                                FRESCA
+                            </p>
+                        </span>
+                    </div>
+                    <p>Medallon 110g, cheddar, lechuga francesa, cebolla morada y tomate</p>
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>message</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5686 16.353 C2.915 14.8839 2 12.9769 2 11 C2 6.5817 6.4772 3 12 3 C17.5228 3 22 6.5817 22 11 C22 15.4183 17.5228 19 12 19 C11.1845 19 10.3721 18.9202 9.5808 18.7624 L5 21 L4.5686 16.353 Z"/></svg>
+                        <a href="https://api.whatsapp.com/message/4JBG3H4MV5HTO1?autoload=1&app_absent=0&utm_source=ig" target="_blank">
+                            Pedir por WhatsApp
+                        </a>
+                    </button>
                 </article>
-                <article class="hamburguesaHero">
-                    <h3>Lacar</h3>  
-                    <p>Medallon 130g, Cheddar x2, Roquefort, Provolone y Cebolla Caramelizada</p>
+                <article class="card-bp-menu">
                     <img src="../assets/img/hamburguesas/Lacar.webp" alt="Hamburguesa Lacar">
+                    <div>
+                        <h3>LACAR</h3>
+                        <span>
+                            <p>
+                                INTENSA
+                            </p>
+                        </span>
+                    </div>
+                    <p>Medallon 110g, queso dambo, roquefort, provolone y cebolla caramelizada</p>
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>message</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5686 16.353 C2.915 14.8839 2 12.9769 2 11 C2 6.5817 6.4772 3 12 3 C17.5228 3 22 6.5817 22 11 C22 15.4183 17.5228 19 12 19 C11.1845 19 10.3721 18.9202 9.5808 18.7624 L5 21 L4.5686 16.353 Z"/></svg>
+                        <a href="https://api.whatsapp.com/message/4JBG3H4MV5HTO1?autoload=1&app_absent=0&utm_source=ig" target="_blank">
+                            Pedir por WhatsApp
+                        </a>
+                    </button>
                 </article>
-                <article class="hamburguesaHero">
-                    <h3>Power</h3>  
-                    <p>Medallon 130g, Cheddar x2, Huevo y Panceta</p>
+                <article class="card-bp-menu">
                     <img src="../assets/img/hamburguesas/Power.webp" alt="Hamburguesa Power">
+                    <div>
+                        <h3>POWER</h3>
+                        <span>
+                            <p>
+                                CLASICA
+                            </p>
+                        </span>
+                    </div>
+                    <p>Medallon de 110g, cheddar, huevo y panceta</p>
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>message</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5686 16.353 C2.915 14.8839 2 12.9769 2 11 C2 6.5817 6.4772 3 12 3 C17.5228 3 22 6.5817 22 11 C22 15.4183 17.5228 19 12 19 C11.1845 19 10.3721 18.9202 9.5808 18.7624 L5 21 L4.5686 16.353 Z"/></svg>
+                        <a href="https://api.whatsapp.com/message/4JBG3H4MV5HTO1?autoload=1&app_absent=0&utm_source=ig" target="_blank">
+                            Pedir por WhatsApp
+                        </a>
+                    </button>
                 </article>
-                <article class="hamburguesaHero">
-                    <h3>Rings</h3>  
-                    <p>Medallon 130g, cheddar x2, panceta, barbacoa y aros de cebolla</p>
+                <article class="card-bp-menu">
                     <img src="../assets/img/hamburguesas/Rings.webp" alt="Hamburguesa Rings">
+                    <div>
+                        <h3>RINGS</h3>
+                        <span>
+                            <p>
+                                CRUJIENTE
+                            </p>
+                        </span>
+                    </div>
+                    <p>Medallon 110g, cheddar, panceta, barbacoa y aros de cebolla</p>
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>message</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5686 16.353 C2.915 14.8839 2 12.9769 2 11 C2 6.5817 6.4772 3 12 3 C17.5228 3 22 6.5817 22 11 C22 15.4183 17.5228 19 12 19 C11.1845 19 10.3721 18.9202 9.5808 18.7624 L5 21 L4.5686 16.353 Z"/></svg>
+                        <a href="https://api.whatsapp.com/message/4JBG3H4MV5HTO1?autoload=1&app_absent=0&utm_source=ig" target="_blank">
+                            Pedir por WhatsApp
+                        </a>
+                    </button>
                 </article>
-                <article class="hamburguesaHero">
-                    <h3>Tromen</h3>  
-                    <p>Medallon 130g, Cheddar x2, Huevo, Cebolla Caramelizada y Salsa Secreta</p>
-                    <img src="../assets/img/hamburguesas/Tromen.webp" alt="Hamburguesa Tromen">
+                <article class="card-bp-menu">
+                    <img src="../assets/img/hamburguesas/Tromen.webp" alt="Tromen">
+                    <div>
+                        <h3>TROMEN</h3>
+                        <span>
+                            <p>
+                                GOURMET
+                            </p>
+                        </span>
+                    </div>
+                    <p>Medallon de 110g, cheddar, huevo, cebolla caramelizada, salsa secreta</p>
+                    <button class="button-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><title>message</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5686 16.353 C2.915 14.8839 2 12.9769 2 11 C2 6.5817 6.4772 3 12 3 C17.5228 3 22 6.5817 22 11 C22 15.4183 17.5228 19 12 19 C11.1845 19 10.3721 18.9202 9.5808 18.7624 L5 21 L4.5686 16.353 Z"/></svg>
+                        <a href="https://api.whatsapp.com/message/4JBG3H4MV5HTO1?autoload=1&app_absent=0&utm_source=ig" target="_blank">
+                            Pedir por WhatsApp
+                        </a>
+                    </button>
                 </article>
             </section>
         </section>
         <section class="paraPicar">
+            <p>
+                PARA PICAR
+            </p>
             <h2> 
-                Conoce nuestro menu para picar!
+                Conoce nuestro menu <span>para picar</span>
             </h2>
             <section class="paraPicarSeccion">
                 <article class="paraPicarHero">
-                    <img src="../assets/img/parapicar/Aros.webp" alt="Aros de Cebolla">
-                    <h3>Aros de Cebolla</h3>  
-                    <p>Consultar agregados.</p>
-                </article>
-                <article class="paraPicarHero">
                     <img src="../assets/img/parapicar/ParaPicar.webp" alt="Fried Box">
-                    <h3>Fried Box</h3>  
-                    <p>Fritas, Nuggets, Chicken Fingers y Mozza Sticks + 2 DIP A Eleccion.</p>
+                    <div>
+                        <span class="estrella">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>star-outline</title><path fill="#FFC665" d="m8.85 16.825l3.15-1.9l3.15 1.925l-.825-3.6l2.775-2.4l-3.65-.325l-1.45-3.4l-1.45 3.375l-3.65.325l2.775 2.425zM5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275zM12 12.25"/></svg>
+                            <h4 class="p-estrella">
+                                ESTRELLA DEL PICOTEO
+                            </h4>
+                        </span>
+                        <h3>FRIED BOX</h3>  
+                        <p>Fritas, Nuggets, Chicken Fingers <br>y Mozza Sticks + 2 DIP A Eleccion.</p>   
+                    </div>
+                    <div class="preciosFried">
+                        <span>
+                            <p>
+                                COMUN
+                            </p>
+                            <h4>
+                                $30.000
+                            </h4>
+                        </span>
+                        <span>
+                            <p>
+                                CON AROS
+                            </p>
+                            <h4>
+                                $34.000
+                            </h4>
+                        </span>
+                    </div>
                 </article>
-                <article class="paraPicarHero">
-                    <img src="../assets/img/parapicar/FriedBox2.webp" alt="Fried Box 2">
-                    <h3>Fried Box 2</h3>  
-                    <p>Fritas, Nuggets, Chicken Fingers, Mozza Sticks y Aros de Cebolla + 2 DIP A Eleccion.</p>
-                </article>
-                <article class="paraPicarHero">
-                    <img src="../assets/img/parapicar/Mozza.webp" alt="Mozza Sticks">
-                    <h3>Palitos de Mozzarella</h3>  
-                    <p>Consultar agregados.</p>
-                </article>
-                <article class="paraPicarHero">
-                    <img src="../assets/img/parapicar/Nuggets.webp" alt="Nuggets">
-                    <h3>Nuggets</h3>  
-                    <p>Consultar agregados.</p>
-                </article>
-                <article class="paraPicarHero">
-                    <img src="../assets/img/parapicar/Chicken.webp" alt="Chicken Fingers">
-                    <h3>Chicken Fingers</h3>  
-                    <p>Consultar agregados.</p>
-                </article>
+            </section>
+            <section class="agregadosDips">
+
             </section>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>Black Powers - Hamburguesas Artesanales 2026. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
