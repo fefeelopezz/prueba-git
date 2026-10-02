@@ -499,8 +499,6 @@ li{
     align-items: center;
 }
 
-
-
 /** Seccion Ubicacion, Horario y Telefono **/
 
 .ubi-de{
@@ -508,8 +506,6 @@ li{
     align-items: center;
     justify-content: center;
 }
-
-
 
 .ubi-de span{
     margin-bottom: 8px;
