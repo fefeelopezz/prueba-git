@@ -822,23 +822,45 @@ li{
 
 .mainMenu{
     margin-top: 100px;
-    margin-left: 250px;
-    margin-right: 250px;
+    width: min(100% - 2rem, 1400px);
+    margin-inline: auto;
+}
+
+@media (max-width: 800px){
+    .mainMenu{
+        margin-top: 40px;
+    }
 }
 
 .heroHamburguesas{
-    margin-left: -250px;
-    margin-right: -250px;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-bottom: 80px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .art-hamburguesas{
     display: flex;
     justify-content: space-between;
     align-items: end;
+}
+
+@media (max-width: 1400px){
+    .heroHamburguesas{
+        align-items: center;
+    }
+
+    .art-hamburguesas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .art-right{
+        margin-top: 20px;
+    }
+
+    .text-hero h1{
+        font-size: 2.5rem;
+    }
 }
 
 .art-hamburguesas h1{
@@ -912,6 +934,36 @@ li{
     letter-spacing: 0.04em;
 }
 
+@media (max-width: 960px){
+    .name-ubi h2{
+        font-size: 0.5rem;
+    }
+
+    .art-hamburguesas h1{
+        font-size: 2rem;
+    }
+
+    .art-hamburguesas p{
+        font-size: 0.7rem;
+    }
+
+    .infoDiasHorarios p{
+        font-size: 0.6rem;
+    }
+    .infoDiasHorarios div svg{
+        width: 1em;
+        height: 1em;
+    }
+
+    .children-hero h4{
+        font-size: 1.5rem;
+    }
+
+    .children-hero p{
+        font-size: 0.5rem;
+    }
+}
+
 /** Seccion Menu **/
 
 .hamburguesasSeccion{
@@ -934,6 +986,16 @@ li{
 .hamburguesasSeccion h3 span{
     color: #FFC665;
     font-style: italic;
+}
+
+@media (max-width: 630px){
+    .hamburguesasSeccion p{
+        font-size: 0.6rem;
+    }
+
+    .hamburguesasSeccion h3{
+        font-size: 1.5rem;
+    }
 }
 
 .hamburguesas{
@@ -1056,6 +1118,12 @@ li{
     font-style: italic;
 }
 
+@media (max-width:630px){
+    .paraPicar h2{
+        font-size: 1.5rem;
+    }
+}
+
 .paraPicarHero{
     display: flex;
     justify-content: start;
@@ -1065,6 +1133,13 @@ li{
     max-width: max-content;
     border-radius: 20px;
     border: 1px solid #ffc7653a;
+}
+
+@media (max-width: 850px){
+    .paraPicarHero{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .paraPicarHero div{
@@ -1149,8 +1224,9 @@ li{
 }
 
 .card-snacks img{  
-    width: 300px;
+    width: 100%;
     height: 240px;
+    object-fit: cover;
     border-radius: 20px;
     margin-bottom: 10px;
 }
@@ -1193,14 +1269,50 @@ li{
     margin-left: 20px;
 }
 
+@media (max-width: 800px){
+    .snacksParaPicar{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
 .paraPicarSeccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 770px;
+}
+
+@media (max-width: 800px){
+    .paraPicarSeccion{
+        width: 100%;
+        min-width: max-content;
+    }
+}
+
+@media (max-width: 350px) {
+    .paraPicarSeccion{
+        margin-top: 20px;
+    }
+    .card-snacks img{
+        width: 260px
+    }
 }
 
 .contenedorParaPicar{
     display: flex;
     justify-content: space-between;
     gap: 40px;
+}
+
+@media (max-width: 1600px){
+    .contenedorParaPicar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .dips{
