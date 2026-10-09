@@ -1602,7 +1602,6 @@ li{
     border-radius: 10px;
 }
 
-
 .promosCondiciones{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1642,4 +1641,147 @@ li{
 
 .promosPagina .pedidosFooter{
     margin: 80px auto 20px;
+}
+
+/** Media Queries - Promos **/
+
+@media (max-width: 768px){
+    .promosHero{
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .promosHero h1{
+        font-size: 2.5rem;
+    }
+
+    .promosHeroTexto{
+        font-size: 0.9rem;
+    }
+
+    .promosHeroHorario p{
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 480px){
+    .promosHero h1{
+        font-size: 2rem;
+    }
+
+    .promosHeroTexto br{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .promosGrillaCards{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .promoCard--destacada{
+        grid-column: 1 / -1;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .promoCard--destacada .promoCardImagen{
+        width: 50%;
+        height: auto;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px){
+    .promosGrilla{
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .promosSeccionEtiqueta,
+    .promosSeccionTitulo{
+        text-align: center;
+    }
+
+    .promosSeccionTitulo{
+        font-size: 1.8rem;
+    }
+
+    .promosGrillaCards{
+        grid-template-columns: 1fr;
+    }
+
+    .promoCard--destacada{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .promoCard--destacada .promoCardImagen{
+        width: 100%;
+        height: 260px;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 480px){
+    .promoCard{
+        padding: 14px;
+    }
+
+    .promoCardImagen,
+    .promoCard--destacada .promoCardImagen{
+        height: 200px;
+    }
+
+    .promoCardEncabezado h3{
+        font-size: 1.15rem;
+    }
+
+    .promoCardDescripcion{
+        font-size: 0.85rem;
+    }
+
+    .promoCardPrecio h4{
+        font-size: 1.6rem;
+    }
+
+    .promoCardEtiqueta,
+    .promoCardPrecio span,
+    .promoCardDestacadaEtiqueta{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .promosCondiciones{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px){
+    .promosCondiciones{
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .condicionItem{
+        padding: 30px 20px;
+    }
+
+    .condicionItem h3{
+        font-size: 1.3rem;
+    }
+
+    .condicionItem p{
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px){
+    .promosPagina .pedidosFooter{
+        margin: 50px auto 20px;
+        padding: 30px;
+    }
 }
