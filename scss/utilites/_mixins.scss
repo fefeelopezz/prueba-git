@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+@mixin flex($j-content, $a-items, $direction){
+    display: flex;
+    justify-content: $j-content;
+    align-items: $a-items;
+    flex-direction: $direction;
+}
+
+@mixin pastilla($fondo: $colorSpanCards, $padding: 3px 8px, $radio: 10px){
+    background-color: $fondo;
+    padding: $padding;
+    border-radius: $radio;
+}

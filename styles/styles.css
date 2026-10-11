@@ -44,12 +44,6 @@ li{
     list-style: none;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .footer{
     text-align: center;
@@ -59,8 +53,6 @@ li{
 .footer p{
     color: #3f3f3f;
 }
-
-
 
 /* Barra de Navegacion */
 
@@ -1405,7 +1397,7 @@ li{
 
 /** Documento Promos **/
 
-.promosPagina{
+.main{
     width: min(100% - 2rem, 1400px);
     margin-inline: auto;
 }

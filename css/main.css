@@ -1,0 +1,707 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.hero .masElegidas .titulo-elegidas .top3 .card-bp, .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de, .pedidosFooter {
+  background: rgba(32, 31, 31, 0.9490196078);
+  border: 1px solid rgba(157, 143, 124, 0.18);
+}
+
+.hero .sobre-nosotros .hero-text .btn-pedidos {
+  border: 2px solid #e5a93c;
+  background-color: #e5a93c;
+  border-radius: 15px;
+}
+
+.hero .sobre-nosotros, .hero .masElegidas, .dondeEncontrarnos {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-image: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)) 0 0 1 0/0 0 1px 0/0 100vw;
+}
+
+#navbarNav ul {
+  margin-right: 50px;
+}
+
+.navbar {
+  background: rgba(17, 17, 17, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item a {
+  margin-left: 20px;
+  color: #D1C7B6;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.logo {
+  margin-left: 50px;
+  width: 90px;
+  height: auto;
+}
+
+.name-ubi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(42, 42, 42, 0.9019607843);
+  padding: 4px 10px;
+  border-radius: 15px;
+  max-width: max-content;
+}
+
+.name-ubi h2 {
+  letter-spacing: 0.05cm;
+  font-size: 0.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffc665;
+  margin-bottom: 0;
+}
+
+.dot {
+  margin-bottom: 2px;
+  margin-right: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ffc665;
+  box-shadow: 0 0 16px rgba(255, 198, 101, 0.5);
+}
+
+@media (min-width: 600px) {
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+}
+@media (min-width: 960px) {
+  .name-ubi h2 {
+    font-size: 0.75rem;
+  }
+}
+.pedidosFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  border-radius: 20px;
+  max-width: max-content;
+  margin: 15px;
+}
+.pedidosFooter h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-block: 20px;
+  color: #ffffff;
+}
+.pedidosFooter h2 span {
+  color: #ffc665;
+  font-style: italic;
+}
+.pedidosFooter p {
+  color: #D4C4B0;
+}
+
+.top-footer {
+  background-color: rgba(53, 53, 52, 0.8);
+  padding: 4px 5px;
+  border-radius: 15px;
+  display: flex;
+  max-width: max-content;
+}
+.top-footer p {
+  color: #ffc665;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.wp-footer,
+.ig-footer {
+  border: 0;
+  padding: 5px 8px 8px;
+  border-radius: 10px;
+}
+.wp-footer a,
+.ig-footer a {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+.wp-footer svg,
+.ig-footer svg {
+  margin-right: 5px;
+}
+
+.wp-footer {
+  background-color: #ffc665;
+  box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
+}
+.wp-footer a {
+  color: #000000;
+  font-weight: 600;
+}
+
+.ig-footer {
+  background-color: rgba(53, 53, 52, 0.8);
+  margin-top: 10px;
+}
+.ig-footer a {
+  color: #ffffff;
+  font-weight: 500;
+}
+.ig-footer svg {
+  margin-bottom: 2px;
+}
+
+@media (min-width: 380px) {
+  .wp-footer a,
+  .ig-footer a {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 600px) {
+  .pedidosFooter h2 {
+    font-size: 2.5rem;
+  }
+  .ig-footer {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .pedidosFooter {
+    margin: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #131313;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  text-align: center;
+  margin: 20px;
+}
+.footer p {
+  color: #D4C4B0;
+  opacity: 0.4;
+  font-weight: 500;
+}
+
+.hero {
+  width: 100%;
+}
+.hero .sobre-nosotros {
+  display: grid;
+  grid-template-areas: "texto" "imagen";
+  justify-items: center;
+  padding-block: 60px;
+}
+.hero .sobre-nosotros .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  grid-area: texto;
+  width: 100%;
+  max-width: 500px;
+  padding-inline: 16px;
+}
+.hero .sobre-nosotros .hero-text h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+.hero .sobre-nosotros .hero-text p {
+  color: #D4C4B0;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+.hero .sobre-nosotros .hero-text span {
+  font-style: italic;
+  color: #ffc665;
+  font-weight: 700;
+}
+.hero .sobre-nosotros .hero-text .btn-pedidos {
+  padding: 13px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
+}
+.hero .sobre-nosotros .hero-text .btn-pedidos a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #000000;
+  opacity: 0.85;
+}
+.hero .sobre-nosotros .hero-text .btn-pedidos svg {
+  opacity: 0.85;
+  margin-top: 1px;
+}
+.hero .sobre-nosotros .hero-text .btn-pedidos .svg-btn {
+  margin-bottom: 4px;
+  margin-right: 5px;
+}
+.hero .sobre-nosotros .hero-text .under-btn {
+  display: flex;
+  align-items: center;
+  margin-block: 10px;
+}
+.hero .sobre-nosotros .hero-text .under-btn p {
+  letter-spacing: 0.08em;
+  font-size: 0.4rem;
+  margin: 10px 6px 10px 0;
+}
+.hero .sobre-nosotros .hero-img {
+  grid-area: imagen;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.24);
+}
+.hero .masElegidas {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.hero .masElegidas h2 {
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+.hero .masElegidas h2 span {
+  font-weight: 800;
+  font-style: italic;
+  color: #ffc665;
+}
+.hero .masElegidas .titulo-elegidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: min(100% - 2rem, 1400px);
+  margin-inline: auto;
+}
+.hero .masElegidas .titulo-elegidas .ranking-bp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.hero .masElegidas .titulo-elegidas .ranking-bp span {
+  width: 26px;
+  height: 2px;
+  background: #ffc665;
+  margin-right: 5px;
+}
+.hero .masElegidas .titulo-elegidas .ranking-bp p {
+  color: #ffc665;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+.hero .masElegidas .titulo-elegidas > h2 {
+  font-size: 1.5rem;
+}
+.hero .masElegidas .titulo-elegidas .top3 {
+  display: grid;
+  grid-template-areas: "primero" "segundo" "tercero";
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 90px;
+  width: 100%;
+  margin-top: 30px;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp:nth-child(1) {
+  grid-area: primero;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp:nth-child(2) {
+  grid-area: segundo;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp:nth-child(3) {
+  grid-area: tercero;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .img-card {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 24px 24px 0 0;
+  object-fit: cover;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 22px;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content p {
+  color: #D4C4B0;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content > p {
+  font-size: 0.7rem;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .card-title h2 {
+  font-size: 1.8rem;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .card-title p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #ffc665;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .content-burguer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .content-burguer .content-title {
+  background-color: rgba(53, 53, 52, 0.8);
+  border-radius: 8px;
+  max-width: max-content;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .content-burguer p {
+  padding: 4px;
+  margin: 0;
+  font-size: 0.7rem;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .button-card {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  margin-top: auto;
+  padding: 14px 16px;
+  background-color: rgba(53, 53, 52, 0.8);
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .button-card .button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .button-card a {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-right: 5px;
+  color: #ffc665;
+}
+
+.dondeEncontrarnos {
+  width: 100%;
+  text-align: center;
+  margin-block: 40px 30px;
+  padding-bottom: 80px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText {
+  width: min(100% - 2rem, 1400px);
+  margin-inline: auto;
+}
+.dondeEncontrarnos .dondeEncontrarnosText h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.dondeEncontrarnos .dondeEncontrarnosText h3 {
+  letter-spacing: 0.04em;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #ffc665;
+}
+.dondeEncontrarnos .dondeEncontrarnosText p {
+  color: #D4C4B0;
+  opacity: 0.9;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .ubi-de {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .ubi-de span {
+  margin-bottom: 8px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de {
+  display: grid;
+  grid-template-areas: "ubicacion" "telefono" "horario";
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  column-gap: 40px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 30px 20px;
+  border-radius: 25px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de:nth-child(1) {
+  grid-area: ubicacion;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de:nth-child(2) {
+  grid-area: telefono;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de:nth-child(3) {
+  grid-area: horario;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .logo-art {
+  background-color: rgba(53, 53, 52, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .logo-art svg {
+  margin-bottom: 4px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de h4 {
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de p {
+  margin: 0;
+  opacity: 1;
+  font-weight: 500;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de > p {
+  margin-bottom: 20px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .more-info {
+  background-color: rgba(53, 53, 52, 0.8);
+  padding: 2px 8px;
+  border-radius: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .more-info p {
+  letter-spacing: 0.04em;
+  color: #ffc665;
+  margin-bottom: 2px;
+  font-size: 0.6rem;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info {
+  background-color: rgba(53, 53, 52, 0.8);
+  padding: 3px 8px;
+  border-radius: 14px;
+  border: 0;
+  margin-top: auto;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info svg {
+  margin-bottom: 2px;
+}
+.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info p {
+  letter-spacing: 0.04em;
+  color: #ffc665;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  font-size: 0.5rem;
+}
+
+@media (min-width: 400px) {
+  .hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content > p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 420px) {
+  .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .more-info p,
+  .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info p {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 450px) {
+  .hero .masElegidas .titulo-elegidas > h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 500px) {
+  .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de {
+    padding: 50px;
+  }
+}
+@media (min-width: 580px) {
+  .hero .sobre-nosotros .hero-text {
+    padding-inline: 0;
+  }
+  .hero .sobre-nosotros .hero-text h1 {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+  .hero .sobre-nosotros .hero-text p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 600px) {
+  .hero .sobre-nosotros .hero-img {
+    width: 50%;
+  }
+  .hero .sobre-nosotros .hero-text .btn-pedidos {
+    font-size: 1rem;
+    margin-block: 15px;
+  }
+  .hero .sobre-nosotros .hero-text .under-btn {
+    margin-block: 0;
+  }
+  .hero .sobre-nosotros .hero-text .under-btn p {
+    font-size: 0.7rem;
+    margin: 16px 7px 1rem;
+  }
+}
+@media (min-width: 700px) {
+  .dondeEncontrarnos .dondeEncontrarnosText h2 {
+    font-size: 2.5rem;
+  }
+  .dondeEncontrarnos .dondeEncontrarnosText h3 {
+    font-size: 0.9rem;
+  }
+  .dondeEncontrarnos .dondeEncontrarnosText p {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .hero .sobre-nosotros {
+    width: min(100% - 2rem, 1400px);
+    margin-inline: auto;
+  }
+  .hero .sobre-nosotros .hero-text {
+    justify-self: start;
+  }
+  .hero .masElegidas .titulo-elegidas {
+    display: block;
+  }
+  .hero .masElegidas .titulo-elegidas .ranking-bp {
+    justify-content: flex-start;
+  }
+  .hero .masElegidas .titulo-elegidas > h2 {
+    text-align: left;
+  }
+  .dondeEncontrarnos .dondeEncontrarnosText .ubi-de {
+    justify-content: flex-start;
+  }
+  .dondeEncontrarnos .dondeEncontrarnosText > h2,
+  .dondeEncontrarnos .dondeEncontrarnosText > p {
+    text-align: left;
+  }
+}
+@media (min-width: 1000px) {
+  .dondeEncontrarnos {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1100px) {
+  .hero .sobre-nosotros .hero-img {
+    width: 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .masElegidas .titulo-elegidas .top3 {
+    grid-template-areas: "primero segundo tercero";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .hero .masElegidas .titulo-elegidas .top3 .card-bp {
+    max-width: none;
+  }
+  .dondeEncontrarnos .dondeEncontrarnosText .info-de {
+    grid-template-areas: "ubicacion telefono horario";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1400px) {
+  .hero .sobre-nosotros {
+    grid-template-areas: "texto imagen";
+    grid-template-columns: 1fr 45%;
+    justify-items: normal;
+    align-items: center;
+    padding-block: 120px;
+  }
+  .hero .sobre-nosotros .hero-img {
+    width: 100%;
+  }
+}
+@media (min-width: 1600px) {
+  .hero .masElegidas .titulo-elegidas > h2 {
+    font-size: 2.8rem;
+  }
+}
+body {
+  background-color: #131313;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

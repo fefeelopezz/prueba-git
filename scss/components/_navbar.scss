@@ -1,0 +1,28 @@
+@use "../utilites/variables" as *;
+
+#navbarNav ul{
+    margin-right: 50px;
+}
+
+.navbar{
+    background: rgba(17, 17, 17, 0.96);
+    border-bottom: $bordeBottom;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.nav-item a{
+    margin-left: 20px;
+    color: $colorTextoNav;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+}
+
+.logo{
+    margin-left: 50px;
+    width: 90px;
+    height: auto;
+}

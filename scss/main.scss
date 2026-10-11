@@ -1,0 +1,13 @@
+@use "./utilites/variables" as *;
+@use "./utilites/extends" as *;
+@use "./utilites/mixins" as *;
+@use "./components/navbar" as *;
+@use "./components/pastillaUbicacion" as *;
+@use "./components/pedidosFooter" as *;
+@use "./base/general" as *;
+@use "./pages/index" as *;
+
+body{
+    background-color: $colorFondo;
+    font-family: $fuenteTextos;
+}

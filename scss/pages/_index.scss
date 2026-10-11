@@ -1,0 +1,476 @@
+@use "../utilites/extends";
+@use "../utilites/mixins" as *;
+@use "../utilites/variables" as *;
+
+.hero{
+    width: 100%;
+    .sobre-nosotros{
+        @extend %separador-seccion;
+        display: grid;
+        grid-template-areas:
+            "texto"
+            "imagen";
+        justify-items: center;
+        padding-block: 60px;
+        .hero-text{
+            @include flex(center, start, column);
+            grid-area: texto;
+            width: 100%;
+            max-width: 500px;
+            padding-inline: 16px;
+            h1{
+                font-weight: 800;
+                font-size: 2.5rem;
+                margin-top: 20px;
+            }
+            p{
+                color: $colorTextos;
+                margin-top: 10px;
+                line-height: 1.5;
+                font-size: 0.8rem;
+            }
+            span{
+                font-style: italic;
+                color: $colorTitulosSpan;
+                font-weight: 700;
+            }
+            .btn-pedidos{
+                @extend %boton-dorado;
+                padding: 13px;
+                cursor: pointer;
+                font-size: 0.8rem;
+                font-weight: 500;
+                box-shadow: $sombraBotones;
+                a{
+                    font-family: $fuenteTextos;
+                    color: $colorTextoBotones;
+                    opacity: 0.85;
+                }
+                svg{
+                    opacity: 0.85;
+                    margin-top: 1px;
+                }
+                .svg-btn{
+                    margin-bottom: 4px;
+                    margin-right: 5px;
+                }
+            }
+            .under-btn{
+                display: flex;
+                align-items: center;
+                margin-block: 10px;
+                p{
+                    letter-spacing: 0.08em;
+                    font-size: 0.4rem;
+                    margin: 10px 6px 10px 0;
+                }
+            }
+        }
+        .hero-img{
+            grid-area: imagen;
+            width: 80%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.24);
+        }
+    }
+    .masElegidas{
+        @extend %separador-seccion;
+        margin-top: 100px;
+        padding-bottom: 100px;
+        h2{
+            font-weight: 700;
+            font-family: $fuenteTitulos;
+            span{
+                font-weight: 800;
+                font-style: italic;
+                color: $colorTitulosSpan;
+            }
+        }
+        .titulo-elegidas{
+            @include flex(center, center, column);
+            width: min(100% - 2rem, 1400px);
+            margin-inline: auto;
+            .ranking-bp{
+                @include flex(center, center, row);
+                margin-bottom: 20px;
+                span{
+                    width: 26px;
+                    height: 2px;
+                    background: $colorTitulosSpan;
+                    margin-right: 5px;
+                }
+                p{
+                    color: $colorTitulosSpan;
+                    margin-bottom: 0;
+                    font-weight: 700;
+                    font-size: 0.72rem;
+                    letter-spacing: 0.14em;
+                }
+            }
+            > h2{
+                font-size: 1.5rem;
+            }
+
+            .top3{
+                display: grid;
+                grid-template-areas:
+                    "primero"
+                    "segundo"
+                    "tercero";
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 90px;
+                width: 100%;
+                margin-top: 30px;
+                .card-bp{
+                    @extend %card-oscura;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 420px;
+                    border-radius: 24px;
+                    &:nth-child(1){
+                        grid-area: primero;
+                    }
+                    &:nth-child(2){
+                        grid-area: segundo;
+                    }
+                    &:nth-child(3){
+                        grid-area: tercero;
+                    }
+                    .img-card{
+                        width: 100%;
+                        aspect-ratio: 4 / 3;
+                        border-radius: 24px 24px 0 0;
+                        object-fit: cover;
+                    }
+                    .card-content{
+                        @include flex(flex-start, stretch, column);
+                        flex-grow: 1;
+                        padding: 22px;
+                        p{
+                            color: $colorTextos;
+                        }
+                        > p{
+                            font-size: 0.7rem;
+                        }
+                        .card-title{
+                            @include flex(space-between, center, row);
+                            h2{
+                                font-size: 1.8rem;
+                            }
+                            p{
+                                margin-top: 8px;
+                                font-size: 0.9rem;
+                                color: $colorTitulosSpan;
+                                font-weight: 600;
+                                letter-spacing: 0.04em;
+                            }
+                        }
+                        .content-burguer{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                            margin-bottom: 16px;
+                            .content-title{
+                                background-color: $colorSpanCards;
+                                border-radius: 8px;
+                                max-width: max-content;
+                            }
+                            p{
+                                padding: 4px;
+                                margin: 0;
+                                font-size: 0.7rem;
+                            }
+                        }
+                        .button-card{
+                            width: 100%;
+                            border: none;
+                            border-radius: 16px;
+                            margin-top: auto;
+                            padding: 14px 16px;
+                            background-color: $colorSpanCards;
+                            .button-content{
+                                @include flex(center, center, row);
+                            }
+                            a{
+                                font-weight: 500;
+                                letter-spacing: 0.04em;
+                                margin-right: 5px;
+                                color: $colorTitulosSpan;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dondeEncontrarnos{
+    @extend %separador-seccion;
+    width: 100%;
+    text-align: center;
+    margin-block: 40px 30px;
+    padding-bottom: 80px;
+    .dondeEncontrarnosText{
+        width: min(100% - 2rem, 1400px);
+        margin-inline: auto;
+        h2{
+            font-family: $fuenteTitulos;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        h3{
+            letter-spacing: 0.04em;
+            font-size: 0.6rem;
+            font-weight: 600;
+            color: $colorTitulosSpan;
+        }
+        p{
+            color: $colorTextos;
+            opacity: 0.9;
+            font-size: 0.8rem;
+            padding: 10px;
+        }
+        .ubi-de{
+            @include flex(center, center, row);
+            span{
+                margin-bottom: 8px;
+            }
+        }
+
+        .info-de{
+            display: grid;
+            grid-template-areas:
+                "ubicacion"
+                "telefono"
+                "horario";
+            grid-template-columns: 1fr;
+            grid-auto-rows: 1fr;
+            column-gap: 40px;
+            .article-de{
+                @extend %card-oscura;
+                @include flex(flex-start, center, column);
+                margin-top: 40px;
+                padding: 30px 20px;
+                border-radius: 25px;
+                &:nth-child(1){
+                    grid-area: ubicacion;
+                }
+                &:nth-child(2){
+                    grid-area: telefono;
+                }
+                &:nth-child(3){
+                    grid-area: horario;
+                }
+                .logo-art{
+                    @include pastilla($padding: 10px, $radio: 15px);
+                    svg{
+                        margin-bottom: 4px;
+                    }
+                }
+                h4{
+                    margin-top: 10px;
+                    color: $colorTitulos;
+                    font-family: $fuenteTitulos;
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+                p{
+                    margin: 0;
+                    opacity: 1;
+                    font-weight: 500;
+                }
+                > p{
+                    margin-bottom: 20px;
+                }
+                .more-info{
+                    @include pastilla($padding: 2px 8px, $radio: 14px);
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: auto;
+                    p{
+                        letter-spacing: 0.04em;
+                        color: $colorTitulosSpan;
+                        margin-bottom: 2px;
+                        font-size: 0.6rem;
+                    }
+                }
+                .button-more-info{
+                    @include pastilla($padding: 3px 8px, $radio: 14px);
+                    border: 0;
+                    margin-top: auto;
+                    a{
+                        @include flex(center, center, row);
+                    }
+                    svg{
+                        margin-bottom: 2px;
+                    }
+                    p{
+                        letter-spacing: 0.04em;
+                        color: $colorTitulosSpan;
+                        margin-bottom: 2px;
+                        margin-left: 4px;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 400px){
+    .hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content > p{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 420px){
+    .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de{
+        .more-info p,
+        .button-more-info p{
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media (min-width: 450px){
+    .hero .masElegidas .titulo-elegidas > h2{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 500px){
+    .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de{
+        padding: 50px;
+    }
+}
+
+@media (min-width: 580px){
+    .hero .sobre-nosotros .hero-text{
+        padding-inline: 0;
+        h1{
+            font-size: 4rem;
+            margin-top: 0;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (min-width: 600px){
+    .hero .sobre-nosotros{
+        .hero-img{
+            width: 50%;
+        }
+        .hero-text{
+            .btn-pedidos{
+                font-size: 1rem;
+                margin-block: 15px;
+            }
+            .under-btn{
+                margin-block: 0;
+                p{
+                    font-size: 0.7rem;
+                    margin: 16px 7px 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px){
+    .dondeEncontrarnos .dondeEncontrarnosText{
+        h2{
+            font-size: 2.5rem;
+        }
+        h3{
+            font-size: 0.9rem;
+        }
+        p{
+            font-size: 1rem;
+            padding: 0;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .hero{
+        .sobre-nosotros{
+            width: min(100% - 2rem, 1400px);
+            margin-inline: auto;
+            .hero-text{
+                justify-self: start;
+            }
+        }
+        .masElegidas .titulo-elegidas{
+            display: block;
+            .ranking-bp{
+                justify-content: flex-start;
+            }
+            > h2{
+                text-align: left;
+            }
+        }
+    }
+
+    .dondeEncontrarnos .dondeEncontrarnosText{
+        .ubi-de{
+            justify-content: flex-start;
+        }
+        > h2,
+        > p{
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    .dondeEncontrarnos{
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1100px){
+    .hero .sobre-nosotros .hero-img{
+        width: 35%;
+    }
+}
+
+@media (min-width: 1200px){
+    .hero .masElegidas .titulo-elegidas .top3{
+        grid-template-areas: "primero segundo tercero";
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        .card-bp{
+            max-width: none;
+        }
+    }
+
+    .dondeEncontrarnos .dondeEncontrarnosText .info-de{
+        grid-template-areas: "ubicacion telefono horario";
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1400px){
+    .hero .sobre-nosotros{
+        grid-template-areas: "texto imagen";
+        grid-template-columns: 1fr 45%;
+        justify-items: normal;
+        align-items: center;
+        padding-block: 120px;
+        .hero-img{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1600px){
+    .hero .masElegidas .titulo-elegidas > h2{
+        font-size: 2.8rem;
+    }
+}
