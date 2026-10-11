@@ -1,0 +1,522 @@
+@use '../utilites/variables' as *;
+@use '../utilites/mixins' as *;
+@use '../utilites/extends' as *; 
+
+.mainMenu{
+    width: min(100% - 2rem, 1400px);
+    margin: 40px auto 0;
+    .heroHamburguesas{
+        @extend %separador-seccion;
+        display: grid;
+        grid-template-areas:
+            "presentacion"
+            "horario";
+        justify-items: center;
+        padding-bottom: 40px;
+        .art-hamburguesas{
+            grid-area: presentacion;
+            display: grid;
+            grid-template-areas:
+                "texto"
+                "estadisticas";
+            justify-items: center;
+            h1{
+                font-weight: 800;
+                font-size: 2rem;
+                span{
+                    font-style: italic;
+                    color: $colorTitulosSpan;
+                }
+            }
+            p{
+                color: $colorTextos;
+                font-size: 0.7rem;
+                margin: 0;
+            }
+            .text-hero{
+                grid-area: texto;
+            }
+            .art-right{
+                @include pastilla($colorPastillas, 15px, 15px);
+                grid-area: estadisticas;
+                display: flex;
+                margin-top: 20px;
+                .children-hero{
+                    &:first-child{
+                        padding-right: 20px;
+                        border-right: $bordeCard;
+                    }
+                    &:last-child{
+                        padding-left: 20px;
+                    }
+                    h4{
+                        font-weight: 700;
+                        color: $colorTitulosSpan;
+                        font-family: $fuenteTitulos;
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
+                    span{
+                        h4{
+                            color: $colorTitulos;
+                        }
+                    }
+                    p{
+                        color: $colorTextos;
+                        font-weight: 300;
+                        font-size: 0.5rem;
+                        opacity: 0.8;
+                        margin: 0;
+                        letter-spacing: 0.04em;
+                    }
+                }
+            }
+        }
+        .infoDiasHorarios{
+            grid-area: horario;
+            div{
+                @include pastilla($colorPastillas, 5px, 10px);
+                display: flex;
+                max-width: max-content;
+                margin-top: 30px;
+                svg{
+                    width: 1em;
+                    height: 1em;
+                }
+            }
+            p{
+                margin-left: 4px;
+                font-size: 0.6rem;
+                color: $colorTextos;
+                opacity: 0.7;
+                margin-bottom: 0;
+                letter-spacing: 0.04em;
+            }
+        }
+    }
+    .hamburguesasSeccion{
+        @extend %separador-seccion;
+        margin-top: 40px;
+        p{
+            color: $colorTitulosSpan;
+            letter-spacing: 0.05em;
+            font-size: 0.6rem;
+        }
+        h3{
+            font-family: $fuenteTitulos;
+            font-size: 1.5rem;
+            font-weight: 800;
+            span{
+                color: $colorTitulosSpan;
+                font-style: italic;
+            }
+        }
+        .hamburguesas{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 50px;
+            padding-bottom: 60px;
+            .card-bp-menu{
+                @extend %card-oscura;
+                display: flex;
+                flex-direction: column;
+                border-radius: 24px;
+                padding: 20px;
+                img{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+                p{
+                    font-weight: 500;
+                    color: $colorTextos;
+                    border-bottom: 1px solid $colorSpanCards;
+                    padding-bottom: 15px;
+                }
+                div{
+                    @include flex(space-between, center, row);
+                    margin-top: 15px;
+                    margin-bottom: 8px;
+                    h3{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                    span{
+                        @include pastilla($padding: 3px 5px);
+                        p{
+                            font-size: 0.7rem;
+                            font-weight: 500;
+                            letter-spacing: 0.06em;
+                            margin: 0;
+                            padding: 0;
+                            color: $colorTitulosSpan;
+                        }
+                    }
+                }
+                .button-menu{
+                    @extend %boton-dorado;
+                    margin-top: auto;
+                    padding: 8px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    a{
+                        color: $colorTextoBotones;
+                        font-weight: 500;
+                    }
+                    svg{
+                        margin-bottom: 3px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .paraPicar{
+        @extend %separador-seccion;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        p{
+            color: $colorTitulosSpan;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            font-size: 0.8rem;
+        }
+        h2{
+            font-family: $fuenteTitulos;
+            font-size: 1.5rem;
+            font-weight: 800;
+            span{
+                color: $colorTitulosSpan;
+                font-style: italic;
+            }
+        }
+        .contenedorParaPicar{
+            display: grid;
+            grid-template-areas:
+                "snacks"
+                "dips";
+            grid-template-columns: 1fr;
+            align-items: start;
+            gap: 40px;
+            .paraPicarSeccion{
+                @include flex(flex-start, stretch, column);
+                grid-area: snacks;
+                gap: 30px;
+                .paraPicarHero{
+                    display: grid;
+                    grid-template-areas:
+                        "imagen"
+                        "info"
+                        "precios";
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                    padding: 15px;
+                    background-color: $colorFondoCards;
+                    border: 1px solid #ffc7653a;
+                    border-radius: 20px;
+                    img{
+                        grid-area: imagen;
+                        width: 100%;
+                        height: 200px;
+                        border-radius: 20px;
+                        object-fit: cover;
+                    }
+                    p{
+                        color: $colorTextos;
+                        font-weight: 400;
+                        letter-spacing: 0.04em;
+                        font-size: 0.9rem;
+                    }
+                    .paraPicarHeroInfo{
+                        grid-area: info;
+                        .estrella{
+                            @include pastilla($colorSpanCards2, 3px, 10px);
+                            display: flex;
+                            align-items: center;
+                            max-width: max-content;
+                            .p-estrella{
+                                color: $colorTitulosSpan;
+                                margin-top: 1px;
+                                margin-left: 3px;
+                                margin-bottom: 0;
+                                font-weight: 600;
+                                font-size: 0.7rem;
+                            }
+                        }
+                        h3{
+                            font-family: $fuenteTitulos;
+                            font-size: 1.5rem;
+                            letter-spacing: 0.04em;
+                            font-weight: 600;
+                            margin-top: 10px;
+                        }
+                    }
+                    .preciosFried{
+                        grid-area: precios;
+                        display: flex;
+                        gap: 10px;
+                        span{
+                            @include pastilla($colorPastillas, 10px, 15px);
+                            flex: 1;
+                            p{
+                                opacity: 0.8;
+                                margin: 0;
+                            }
+                            h4{
+                                font-family: $fuenteTitulos;
+                                font-weight: 700;
+                                color: $colorTitulosSpan;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+                .snacksParaPicar{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                    .card-snacks{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px;
+                        background: $colorFondoCards;
+                        border: $bordeCard;
+                        border-radius: 20px;
+                        img{
+                            width: 100%;
+                            height: 240px;
+                            object-fit: cover;
+                            border-radius: 20px;
+                            margin-bottom: 10px;
+                        }
+                        div{
+                            @include flex(space-between, center, row);
+                            margin-top: 10px;
+                            h3{
+                                font-weight: 700;
+                                margin: 0;
+                                font-size: 1rem;
+                            }
+                            h4{
+                                font-weight: 600;
+                                margin: 0;
+                                font-size: 0.9rem;
+                                color: $colorTitulosSpan;
+                            }
+                        }
+                        p{
+                            opacity: 0.8;
+                            margin-top: 5px;
+                            margin-bottom: 0;
+                            font-weight: 400;
+                            font-size: 0.8rem;
+                            color: $colorTextos;
+                        }
+                    }
+                }
+            }
+            .agregadosDips{
+                grid-area: dips;
+                padding: 20px;
+                background-color: $colorFondoCards;
+                border: $bordeCard;
+                border-radius: 20px;
+                .infoAgregados{
+                    display: flex;
+                    svg{
+                        margin-right: 10px;
+                    }
+                    p{
+                        color: $colorTextos;
+                        font-size: 0.8rem;
+                    }
+                }
+                .dips{
+                    @include flex(space-between, center, row);
+                    border-bottom: $bordeBottom;
+                    margin-bottom: 10px;
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        color: $colorTextos;
+                        font-size: 0.8rem;
+                    }
+                    h4{
+                        color: $colorTitulosSpan;
+                        font-weight: 600;
+                    }
+                }
+                img{
+                    margin-top: 20px;
+                    width: 100%;
+                    aspect-ratio: 16 / 10;
+                    border-radius: 20px;
+                    object-fit: cover;
+                }
+                .datosAgregados{
+                    @include pastilla($colorPastillas, 15px 10px 15px 15px, 15px);
+                    margin-top: 60px;
+                    article{
+                        &:first-child{
+                            border-bottom: $bordeBottom;
+                            padding-bottom: 20px;
+                        }
+                        &:last-child{
+                            margin-top: 20px;
+                        }
+                        div{
+                            display: flex;
+                            align-items: center;
+                            h4{
+                                font-weight: 600;
+                                color: $colorTitulos;
+                                margin-bottom: 0;
+                                margin-left: 10px;
+                                font-size: 1rem;
+                            }
+                        }
+                        p{
+                            color: $colorTextos;
+                            font-size: 0.8rem;
+                            margin: 10px 0 0 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 560px){
+    .mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 600px){
+    .mainMenu{
+        .hamburguesasSeccion .hamburguesas{
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero{
+            grid-template-areas:
+                "imagen info"
+                "imagen precios";
+            grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+            column-gap: 20px;
+            align-items: center;
+            img{
+                height: 0;
+                min-height: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 630px){
+    .mainMenu{
+        .hamburguesasSeccion{
+            p{
+                font-size: 0.8rem;
+            }
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+        .paraPicar{
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .mainMenu{
+        .heroHamburguesas{
+            padding-bottom: 60px;
+        }
+        .hamburguesasSeccion{
+            margin-top: 60px;
+        }
+        .paraPicar{
+            margin-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+}
+
+@media (min-width: 800px){
+    .mainMenu{
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 960px){
+    .mainMenu .heroHamburguesas{
+        .art-hamburguesas{
+            h1{
+                font-size: 4rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+            .art-right .children-hero{
+                h4{
+                    font-size: 2.2rem;
+                }
+                p{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+        .infoDiasHorarios{
+            div svg{
+                width: 1.2em;
+                height: 1.2em;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    .mainMenu .paraPicar .contenedorParaPicar{
+        grid-template-areas: "snacks dips";
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    }
+}
+
+@media (min-width: 1300px){
+    .mainMenu .hamburguesasSeccion .hamburguesas{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1400px){
+    .mainMenu .heroHamburguesas{
+        justify-items: normal;
+        .art-hamburguesas{
+            grid-template-areas: "texto estadisticas";
+            justify-content: space-between;
+            justify-items: normal;
+            align-items: end;
+            .art-right{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px){
+    .mainMenu .hamburguesasSeccion .hamburguesas{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

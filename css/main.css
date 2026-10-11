@@ -1,46 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-.hero .masElegidas .titulo-elegidas .top3 .card-bp, .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de, .pedidosFooter {
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu, .hero .masElegidas .titulo-elegidas .top3 .card-bp, .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de, .pedidosFooter {
   background: rgba(32, 31, 31, 0.9490196078);
   border: 1px solid rgba(157, 143, 124, 0.18);
 }
 
-.hero .sobre-nosotros .hero-text .btn-pedidos {
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu .button-menu, .hero .sobre-nosotros .hero-text .btn-pedidos {
   border: 2px solid #e5a93c;
   background-color: #e5a93c;
   border-radius: 15px;
 }
 
-.hero .sobre-nosotros, .hero .masElegidas, .dondeEncontrarnos {
+.mainMenu .heroHamburguesas, .mainMenu .hamburguesasSeccion, .mainMenu .paraPicar, .hero .sobre-nosotros, .hero .masElegidas, .dondeEncontrarnos {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-image: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)) 0 0 1 0/0 0 1px 0/0 100vw;
-}
-
-#navbarNav ul {
-  margin-right: 50px;
 }
 
 .navbar {
   background: rgba(17, 17, 17, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-
-.navbar-nav {
+.navbar .logo {
+  margin-left: 50px;
+  width: 90px;
+  height: auto;
+}
+.navbar #navbarNav ul {
+  margin-right: 50px;
+}
+.navbar #navbarNav .navbar-nav {
   margin-left: auto;
 }
-
-.nav-item a {
+.navbar #navbarNav .nav-item a {
   margin-left: 20px;
   color: #D1C7B6;
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
-}
-
-.logo {
-  margin-left: 50px;
-  width: 90px;
-  height: auto;
 }
 
 .name-ubi {
@@ -53,7 +49,6 @@
   border-radius: 15px;
   max-width: max-content;
 }
-
 .name-ubi h2 {
   letter-spacing: 0.05cm;
   font-size: 0.5rem;
@@ -62,8 +57,7 @@
   color: #ffc665;
   margin-bottom: 0;
 }
-
-.dot {
+.name-ubi .dot {
   margin-bottom: 2px;
   margin-right: 8px;
   width: 5px;
@@ -92,14 +86,28 @@
   padding: 60px;
   border-radius: 20px;
   max-width: max-content;
-  margin: 15px;
+  margin: 30px;
+}
+.pedidosFooter .top-footer {
+  background-color: rgba(53, 53, 52, 0.8);
+  padding: 4px 5px;
+  border-radius: 15px;
+  display: flex;
+  max-width: max-content;
+}
+.pedidosFooter .top-footer p {
+  color: #ffc665;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-left: 5px;
+  margin-bottom: 0;
 }
 .pedidosFooter h2 {
   font-family: "Playfair Display", serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 800;
   margin-block: 20px;
-  color: #ffffff;
 }
 .pedidosFooter h2 span {
   color: #ffc665;
@@ -108,57 +116,38 @@
 .pedidosFooter p {
   color: #D4C4B0;
 }
-
-.top-footer {
-  background-color: rgba(53, 53, 52, 0.8);
-  padding: 4px 5px;
-  border-radius: 15px;
-  display: flex;
-  max-width: max-content;
-}
-.top-footer p {
-  color: #ffc665;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  margin-left: 5px;
-  margin-bottom: 0;
-}
-
-.wp-footer,
-.ig-footer {
+.pedidosFooter .btn-footer .wp-footer,
+.pedidosFooter .btn-footer .ig-footer {
   border: 0;
   padding: 5px 8px 8px;
   border-radius: 10px;
 }
-.wp-footer a,
-.ig-footer a {
+.pedidosFooter .btn-footer .wp-footer a,
+.pedidosFooter .btn-footer .ig-footer a {
   font-size: 0.7rem;
   letter-spacing: 0.04em;
 }
-.wp-footer svg,
-.ig-footer svg {
+.pedidosFooter .btn-footer .wp-footer svg,
+.pedidosFooter .btn-footer .ig-footer svg {
   margin-right: 5px;
 }
-
-.wp-footer {
+.pedidosFooter .btn-footer .wp-footer {
   background-color: #ffc665;
   box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
 }
-.wp-footer a {
+.pedidosFooter .btn-footer .wp-footer a {
   color: #000000;
   font-weight: 600;
 }
-
-.ig-footer {
+.pedidosFooter .btn-footer .ig-footer {
   background-color: rgba(53, 53, 52, 0.8);
   margin-top: 10px;
 }
-.ig-footer a {
+.pedidosFooter .btn-footer .ig-footer a {
   color: #ffffff;
   font-weight: 500;
 }
-.ig-footer svg {
+.pedidosFooter .btn-footer .ig-footer svg {
   margin-bottom: 2px;
 }
 
@@ -697,6 +686,499 @@ li {
 @media (min-width: 1600px) {
   .hero .masElegidas .titulo-elegidas > h2 {
     font-size: 2.8rem;
+  }
+}
+.mainMenu {
+  width: min(100% - 2rem, 1400px);
+  margin: 40px auto 0;
+}
+.mainMenu .heroHamburguesas {
+  display: grid;
+  grid-template-areas: "presentacion" "horario";
+  justify-items: center;
+  padding-bottom: 40px;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas {
+  grid-area: presentacion;
+  display: grid;
+  grid-template-areas: "texto" "estadisticas";
+  justify-items: center;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas h1 span {
+  font-style: italic;
+  color: #ffc665;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas p {
+  color: #D4C4B0;
+  font-size: 0.7rem;
+  margin: 0;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas .text-hero {
+  grid-area: texto;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas .art-right {
+  background-color: rgba(42, 42, 42, 0.9019607843);
+  padding: 15px;
+  border-radius: 15px;
+  grid-area: estadisticas;
+  display: flex;
+  margin-top: 20px;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero:first-child {
+  padding-right: 20px;
+  border-right: 1px solid rgba(157, 143, 124, 0.18);
+}
+.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero:last-child {
+  padding-left: 20px;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero h4 {
+  font-weight: 700;
+  color: #ffc665;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero span h4 {
+  color: #ffffff;
+}
+.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero p {
+  color: #D4C4B0;
+  font-weight: 300;
+  font-size: 0.5rem;
+  opacity: 0.8;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+.mainMenu .heroHamburguesas .infoDiasHorarios {
+  grid-area: horario;
+}
+.mainMenu .heroHamburguesas .infoDiasHorarios div {
+  background-color: rgba(42, 42, 42, 0.9019607843);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  max-width: max-content;
+  margin-top: 30px;
+}
+.mainMenu .heroHamburguesas .infoDiasHorarios div svg {
+  width: 1em;
+  height: 1em;
+}
+.mainMenu .heroHamburguesas .infoDiasHorarios p {
+  margin-left: 4px;
+  font-size: 0.6rem;
+  color: #D4C4B0;
+  opacity: 0.7;
+  margin-bottom: 0;
+  letter-spacing: 0.04em;
+}
+.mainMenu .hamburguesasSeccion {
+  margin-top: 40px;
+}
+.mainMenu .hamburguesasSeccion p {
+  color: #ffc665;
+  letter-spacing: 0.05em;
+  font-size: 0.6rem;
+}
+.mainMenu .hamburguesasSeccion h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.mainMenu .hamburguesasSeccion h3 span {
+  color: #ffc665;
+  font-style: italic;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 50px;
+  padding-bottom: 60px;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 20px;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu p {
+  font-weight: 500;
+  color: #D4C4B0;
+  border-bottom: 1px solid rgba(53, 53, 52, 0.8);
+  padding-bottom: 15px;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu div h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu div span {
+  background-color: rgba(53, 53, 52, 0.8);
+  padding: 3px 5px;
+  border-radius: 10px;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu div span p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding: 0;
+  color: #ffc665;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu .button-menu {
+  margin-top: auto;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu .button-menu a {
+  color: #000000;
+  font-weight: 500;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu .button-menu svg {
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.mainMenu .paraPicar {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.mainMenu .paraPicar p {
+  color: #ffc665;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+}
+.mainMenu .paraPicar h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.mainMenu .paraPicar h2 span {
+  color: #ffc665;
+  font-style: italic;
+}
+.mainMenu .paraPicar .contenedorParaPicar {
+  display: grid;
+  grid-template-areas: "snacks" "dips";
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 40px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  grid-area: snacks;
+  gap: 30px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero {
+  display: grid;
+  grid-template-areas: "imagen" "info" "precios";
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 15px;
+  background-color: rgba(32, 31, 31, 0.9490196078);
+  border: 1px solid rgba(255, 199, 101, 0.2274509804);
+  border-radius: 20px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero img {
+  grid-area: imagen;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero p {
+  color: #D4C4B0;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .paraPicarHeroInfo {
+  grid-area: info;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .paraPicarHeroInfo .estrella {
+  background-color: rgba(199, 156, 82, 0.2941176471);
+  padding: 3px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .paraPicarHeroInfo .estrella .p-estrella {
+  color: #ffc665;
+  margin-top: 1px;
+  margin-left: 3px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .paraPicarHeroInfo h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .preciosFried {
+  grid-area: precios;
+  display: flex;
+  gap: 10px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .preciosFried span {
+  background-color: rgba(42, 42, 42, 0.9019607843);
+  padding: 10px;
+  border-radius: 15px;
+  flex: 1;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .preciosFried span p {
+  opacity: 0.8;
+  margin: 0;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .preciosFried span h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #ffc665;
+  margin: 0;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(32, 31, 31, 0.9490196078);
+  border: 1px solid rgba(157, 143, 124, 0.18);
+  border-radius: 20px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks div h3 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 1rem;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks div h4 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ffc665;
+}
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks p {
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #D4C4B0;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips {
+  grid-area: dips;
+  padding: 20px;
+  background-color: rgba(32, 31, 31, 0.9490196078);
+  border: 1px solid rgba(157, 143, 124, 0.18);
+  border-radius: 20px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .infoAgregados {
+  display: flex;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .infoAgregados svg {
+  margin-right: 10px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .infoAgregados p {
+  color: #D4C4B0;
+  font-size: 0.8rem;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .dips {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 10px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .dips h3 {
+  font-size: 1.2rem;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .dips p {
+  color: #D4C4B0;
+  font-size: 0.8rem;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .dips h4 {
+  color: #ffc665;
+  font-weight: 600;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips img {
+  margin-top: 20px;
+  width: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .datosAgregados {
+  background-color: rgba(42, 42, 42, 0.9019607843);
+  padding: 15px 10px 15px 15px;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .datosAgregados article:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 20px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .datosAgregados article:last-child {
+  margin-top: 20px;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .datosAgregados article div {
+  display: flex;
+  align-items: center;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .datosAgregados article div h4 {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+.mainMenu .paraPicar .contenedorParaPicar .agregadosDips .datosAgregados article p {
+  color: #D4C4B0;
+  font-size: 0.8rem;
+  margin: 10px 0 0 35px;
+}
+
+@media (min-width: 560px) {
+  .mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 600px) {
+  .mainMenu .hamburguesasSeccion .hamburguesas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero {
+    grid-template-areas: "imagen info" "imagen precios";
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    column-gap: 20px;
+    align-items: center;
+  }
+  .mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero img {
+    height: 0;
+    min-height: 100%;
+  }
+}
+@media (min-width: 630px) {
+  .mainMenu .hamburguesasSeccion p {
+    font-size: 0.8rem;
+  }
+  .mainMenu .hamburguesasSeccion h3 {
+    font-size: 2.5rem;
+  }
+  .mainMenu .paraPicar h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .mainMenu .heroHamburguesas {
+    padding-bottom: 60px;
+  }
+  .mainMenu .hamburguesasSeccion {
+    margin-top: 60px;
+  }
+  .mainMenu .paraPicar {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 800px) {
+  .mainMenu {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 960px) {
+  .mainMenu .heroHamburguesas .art-hamburguesas h1 {
+    font-size: 4rem;
+  }
+  .mainMenu .heroHamburguesas .art-hamburguesas p {
+    font-size: 1.1rem;
+  }
+  .mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero h4 {
+    font-size: 2.2rem;
+  }
+  .mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero p {
+    font-size: 0.75rem;
+  }
+  .mainMenu .heroHamburguesas .infoDiasHorarios div svg {
+    width: 1.2em;
+    height: 1.2em;
+  }
+  .mainMenu .heroHamburguesas .infoDiasHorarios p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1000px) {
+  .mainMenu .paraPicar .contenedorParaPicar {
+    grid-template-areas: "snacks dips";
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  }
+}
+@media (min-width: 1300px) {
+  .mainMenu .hamburguesasSeccion .hamburguesas {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1400px) {
+  .mainMenu .heroHamburguesas {
+    justify-items: normal;
+  }
+  .mainMenu .heroHamburguesas .art-hamburguesas {
+    grid-template-areas: "texto estadisticas";
+    justify-content: space-between;
+    justify-items: normal;
+    align-items: end;
+  }
+  .mainMenu .heroHamburguesas .art-hamburguesas .art-right {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1600px) {
+  .mainMenu .hamburguesasSeccion .hamburguesas {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 body {

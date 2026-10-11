@@ -5,25 +5,23 @@
     @include flex(center, center, row);
     @include pastilla($colorPastillas, 4px 10px, 15px);
     max-width: max-content;
-}
-
-.name-ubi h2{
-    letter-spacing: 0.05cm;
-    font-size: 0.5rem;
-    font-weight: 700;
-    line-height: 1.5;
-    color: $colorTitulosSpan;
-    margin-bottom: 0;
-}
-
-.dot{
-    margin-bottom: 2px;
-    margin-right: 8px;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: $colorTitulosSpan;
-    box-shadow: 0 0 16px rgba(255, 198, 101, 0.5);
+    h2{
+        letter-spacing: 0.05cm;
+        font-size: 0.5rem;
+        font-weight: 700;
+        line-height: 1.5;
+        color: $colorTitulosSpan;
+        margin-bottom: 0;
+    }
+    .dot{
+        margin-bottom: 2px;
+        margin-right: 8px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $colorTitulosSpan;
+        box-shadow: 0 0 16px rgba(255, 198, 101, 0.5);
+    }
 }
 
 @media (min-width: 600px){
