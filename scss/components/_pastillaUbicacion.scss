@@ -1,7 +1,7 @@
 @use '../utilites/variables' as *;
 @use '../utilites/mixins' as *;
 
-.name-ubi{
+.nameUbi{
     @include flex(center, center, row);
     @include pastilla($colorPastillas, 4px 10px, 15px);
     max-width: max-content;
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: 960px){
-    .name-ubi h2{
+    .nameUbi h2{
         font-size: 0.75rem;
     }
 }

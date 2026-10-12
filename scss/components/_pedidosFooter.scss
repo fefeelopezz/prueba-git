@@ -12,7 +12,7 @@
     border-radius: 20px;
     max-width: max-content;
     margin: 30px;
-    .top-footer{
+    .topFooter{
         @include pastilla($padding: 4px 5px, $radio: 15px);
         display: flex;
         max-width: max-content;
@@ -38,9 +38,9 @@
     p{
         color: $colorTextos;
     }
-    .btn-footer{
-        .wp-footer,
-        .ig-footer{
+    .btnFooter{
+        .wpFooter,
+        .igFooter{
             border: 0;
             padding: 5px 8px 8px;
             border-radius: 10px;
@@ -52,7 +52,7 @@
                 margin-right: 5px;
             }
         }
-        .wp-footer{
+        .wpFooter{
             background-color: $colorTitulosSpan;
             box-shadow: $sombraBotones;
             a{
@@ -60,7 +60,7 @@
                 font-weight: 600;
             }
         }
-        .ig-footer{
+        .igFooter{
             background-color: $colorSpanCards;
             margin-top: 10px;
             a{
@@ -75,8 +75,8 @@
 }
 
 @media (min-width: 380px){
-    .wp-footer a,
-    .ig-footer a{
+    .wpFooter a,
+    .igFooter a{
         font-size: 0.8rem;
     }
 }
@@ -86,7 +86,7 @@
         font-size: 2.5rem;
     }
 
-    .ig-footer{
+    .igFooter{
         margin-top: 0;
         margin-left: 20px;
     }

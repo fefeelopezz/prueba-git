@@ -13,7 +13,7 @@
             "horario";
         justify-items: center;
         padding-bottom: 40px;
-        .art-hamburguesas{
+        .artHamburguesas{
             grid-area: presentacion;
             display: grid;
             grid-template-areas:
@@ -33,15 +33,15 @@
                 font-size: 0.7rem;
                 margin: 0;
             }
-            .text-hero{
+            .textHero{
                 grid-area: texto;
             }
-            .art-right{
+            .artRight{
                 @include pastilla($colorPastillas, 15px, 15px);
                 grid-area: estadisticas;
                 display: flex;
                 margin-top: 20px;
-                .children-hero{
+                .childrenHero{
                     &:first-child{
                         padding-right: 20px;
                         border-right: $bordeCard;
@@ -117,7 +117,7 @@
             gap: 24px;
             margin-top: 50px;
             padding-bottom: 60px;
-            .card-bp-menu{
+            .cardBpMenu{
                 @extend %card-oscura;
                 display: flex;
                 flex-direction: column;
@@ -156,7 +156,7 @@
                         }
                     }
                 }
-                .button-menu{
+                .buttonMenu{
                     @extend %boton-dorado;
                     margin-top: auto;
                     padding: 8px;
@@ -238,7 +238,7 @@
                             display: flex;
                             align-items: center;
                             max-width: max-content;
-                            .p-estrella{
+                            .pEstrella{
                                 color: $colorTitulosSpan;
                                 margin-top: 1px;
                                 margin-left: 3px;
@@ -279,7 +279,7 @@
                     display: grid;
                     grid-template-columns: 1fr;
                     gap: 30px;
-                    .card-snacks{
+                    .cardSnacks{
                         display: flex;
                         flex-direction: column;
                         padding: 20px;
@@ -462,14 +462,14 @@
 
 @media (min-width: 960px){
     .mainMenu .heroHamburguesas{
-        .art-hamburguesas{
+        .artHamburguesas{
             h1{
                 font-size: 4rem;
             }
             p{
                 font-size: 1.1rem;
             }
-            .art-right .children-hero{
+            .artRight .childrenHero{
                 h4{
                     font-size: 2.2rem;
                 }
@@ -506,12 +506,12 @@
 @media (min-width: 1400px){
     .mainMenu .heroHamburguesas{
         justify-items: normal;
-        .art-hamburguesas{
+        .artHamburguesas{
             grid-template-areas: "texto estadisticas";
             justify-content: space-between;
             justify-items: normal;
             align-items: end;
-            .art-right{
+            .artRight{
                 margin-top: 0;
             }
         }

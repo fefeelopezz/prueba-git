@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu, .hero .masElegidas .titulo-elegidas .top3 .card-bp, .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de, .pedidosFooter {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu, .hero .masElegidas .tituloElegidas .top3 .cardBp, .dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe, .pedidosFooter {
   background: rgba(32, 31, 31, 0.9490196078);
   border: 1px solid rgba(157, 143, 124, 0.18);
 }
 
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu .button-menu, .hero .sobre-nosotros .hero-text .btn-pedidos {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu, .hero .sobreNosotros .heroText .btnPedidos {
   border: 2px solid #e5a93c;
   background-color: #e5a93c;
   border-radius: 15px;
 }
 
-.mainMenu .heroHamburguesas, .mainMenu .hamburguesasSeccion, .mainMenu .paraPicar, .hero .sobre-nosotros, .hero .masElegidas, .dondeEncontrarnos {
+.mainMenu .heroHamburguesas, .mainMenu .hamburguesasSeccion, .mainMenu .paraPicar, .hero .sobreNosotros, .hero .masElegidas, .dondeEncontrarnos {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-image: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)) 0 0 1 0/0 0 1px 0/0 100vw;
 }
@@ -39,7 +39,7 @@
   letter-spacing: 0.08em;
 }
 
-.name-ubi {
+.nameUbi {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@
   border-radius: 15px;
   max-width: max-content;
 }
-.name-ubi h2 {
+.nameUbi h2 {
   letter-spacing: 0.05cm;
   font-size: 0.5rem;
   font-weight: 700;
@@ -57,7 +57,7 @@
   color: #ffc665;
   margin-bottom: 0;
 }
-.name-ubi .dot {
+.nameUbi .dot {
   margin-bottom: 2px;
   margin-right: 8px;
   width: 5px;
@@ -74,7 +74,7 @@
   }
 }
 @media (min-width: 960px) {
-  .name-ubi h2 {
+  .nameUbi h2 {
     font-size: 0.75rem;
   }
 }
@@ -88,14 +88,14 @@
   max-width: max-content;
   margin: 30px;
 }
-.pedidosFooter .top-footer {
+.pedidosFooter .topFooter {
   background-color: rgba(53, 53, 52, 0.8);
   padding: 4px 5px;
   border-radius: 15px;
   display: flex;
   max-width: max-content;
 }
-.pedidosFooter .top-footer p {
+.pedidosFooter .topFooter p {
   color: #ffc665;
   font-size: 0.7rem;
   font-weight: 600;
@@ -116,44 +116,44 @@
 .pedidosFooter p {
   color: #D4C4B0;
 }
-.pedidosFooter .btn-footer .wp-footer,
-.pedidosFooter .btn-footer .ig-footer {
+.pedidosFooter .btnFooter .wpFooter,
+.pedidosFooter .btnFooter .igFooter {
   border: 0;
   padding: 5px 8px 8px;
   border-radius: 10px;
 }
-.pedidosFooter .btn-footer .wp-footer a,
-.pedidosFooter .btn-footer .ig-footer a {
+.pedidosFooter .btnFooter .wpFooter a,
+.pedidosFooter .btnFooter .igFooter a {
   font-size: 0.7rem;
   letter-spacing: 0.04em;
 }
-.pedidosFooter .btn-footer .wp-footer svg,
-.pedidosFooter .btn-footer .ig-footer svg {
+.pedidosFooter .btnFooter .wpFooter svg,
+.pedidosFooter .btnFooter .igFooter svg {
   margin-right: 5px;
 }
-.pedidosFooter .btn-footer .wp-footer {
+.pedidosFooter .btnFooter .wpFooter {
   background-color: #ffc665;
   box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
 }
-.pedidosFooter .btn-footer .wp-footer a {
+.pedidosFooter .btnFooter .wpFooter a {
   color: #000000;
   font-weight: 600;
 }
-.pedidosFooter .btn-footer .ig-footer {
+.pedidosFooter .btnFooter .igFooter {
   background-color: rgba(53, 53, 52, 0.8);
   margin-top: 10px;
 }
-.pedidosFooter .btn-footer .ig-footer a {
+.pedidosFooter .btnFooter .igFooter a {
   color: #ffffff;
   font-weight: 500;
 }
-.pedidosFooter .btn-footer .ig-footer svg {
+.pedidosFooter .btnFooter .igFooter svg {
   margin-bottom: 2px;
 }
 
 @media (min-width: 380px) {
-  .wp-footer a,
-  .ig-footer a {
+  .wpFooter a,
+  .igFooter a {
     font-size: 0.8rem;
   }
 }
@@ -161,7 +161,7 @@
   .pedidosFooter h2 {
     font-size: 2.5rem;
   }
-  .ig-footer {
+  .igFooter {
     margin-top: 0;
     margin-left: 20px;
   }
@@ -228,13 +228,13 @@ li {
 .hero {
   width: 100%;
 }
-.hero .sobre-nosotros {
+.hero .sobreNosotros {
   display: grid;
   grid-template-areas: "texto" "imagen";
   justify-items: center;
   padding-block: 60px;
 }
-.hero .sobre-nosotros .hero-text {
+.hero .sobreNosotros .heroText {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -244,53 +244,53 @@ li {
   max-width: 500px;
   padding-inline: 16px;
 }
-.hero .sobre-nosotros .hero-text h1 {
+.hero .sobreNosotros .heroText h1 {
   font-weight: 800;
   font-size: 2.5rem;
   margin-top: 20px;
 }
-.hero .sobre-nosotros .hero-text p {
+.hero .sobreNosotros .heroText p {
   color: #D4C4B0;
   margin-top: 10px;
   line-height: 1.5;
   font-size: 0.8rem;
 }
-.hero .sobre-nosotros .hero-text span {
+.hero .sobreNosotros .heroText span {
   font-style: italic;
   color: #ffc665;
   font-weight: 700;
 }
-.hero .sobre-nosotros .hero-text .btn-pedidos {
+.hero .sobreNosotros .heroText .btnPedidos {
   padding: 13px;
   cursor: pointer;
   font-size: 0.8rem;
   font-weight: 500;
   box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
 }
-.hero .sobre-nosotros .hero-text .btn-pedidos a {
+.hero .sobreNosotros .heroText .btnPedidos a {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #000000;
   opacity: 0.85;
 }
-.hero .sobre-nosotros .hero-text .btn-pedidos svg {
+.hero .sobreNosotros .heroText .btnPedidos svg {
   opacity: 0.85;
   margin-top: 1px;
 }
-.hero .sobre-nosotros .hero-text .btn-pedidos .svg-btn {
+.hero .sobreNosotros .heroText .btnPedidos .svg-btn {
   margin-bottom: 4px;
   margin-right: 5px;
 }
-.hero .sobre-nosotros .hero-text .under-btn {
+.hero .sobreNosotros .heroText .underBtn {
   display: flex;
   align-items: center;
   margin-block: 10px;
 }
-.hero .sobre-nosotros .hero-text .under-btn p {
+.hero .sobreNosotros .heroText .underBtn p {
   letter-spacing: 0.08em;
   font-size: 0.4rem;
   margin: 10px 6px 10px 0;
 }
-.hero .sobre-nosotros .hero-img {
+.hero .sobreNosotros .heroImg {
   grid-area: imagen;
   width: 80%;
   object-fit: cover;
@@ -310,7 +310,7 @@ li {
   font-style: italic;
   color: #ffc665;
 }
-.hero .masElegidas .titulo-elegidas {
+.hero .masElegidas .tituloElegidas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,30 +318,30 @@ li {
   width: min(100% - 2rem, 1400px);
   margin-inline: auto;
 }
-.hero .masElegidas .titulo-elegidas .ranking-bp {
+.hero .masElegidas .tituloElegidas .rankingBp {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   margin-bottom: 20px;
 }
-.hero .masElegidas .titulo-elegidas .ranking-bp span {
+.hero .masElegidas .tituloElegidas .rankingBp span {
   width: 26px;
   height: 2px;
   background: #ffc665;
   margin-right: 5px;
 }
-.hero .masElegidas .titulo-elegidas .ranking-bp p {
+.hero .masElegidas .tituloElegidas .rankingBp p {
   color: #ffc665;
   margin-bottom: 0;
   font-weight: 700;
   font-size: 0.72rem;
   letter-spacing: 0.14em;
 }
-.hero .masElegidas .titulo-elegidas > h2 {
+.hero .masElegidas .tituloElegidas > h2 {
   font-size: 1.5rem;
 }
-.hero .masElegidas .titulo-elegidas .top3 {
+.hero .masElegidas .tituloElegidas .top3 {
   display: grid;
   grid-template-areas: "primero" "segundo" "tercero";
   grid-template-columns: 1fr;
@@ -350,29 +350,29 @@ li {
   width: 100%;
   margin-top: 30px;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp {
+.hero .masElegidas .tituloElegidas .top3 .cardBp {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 420px;
   border-radius: 24px;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp:nth-child(1) {
+.hero .masElegidas .tituloElegidas .top3 .cardBp:nth-child(1) {
   grid-area: primero;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp:nth-child(2) {
+.hero .masElegidas .tituloElegidas .top3 .cardBp:nth-child(2) {
   grid-area: segundo;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp:nth-child(3) {
+.hero .masElegidas .tituloElegidas .top3 .cardBp:nth-child(3) {
   grid-area: tercero;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .img-card {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .imgCard {
   width: 100%;
   aspect-ratio: 4/3;
   border-radius: 24px 24px 0 0;
   object-fit: cover;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -380,45 +380,45 @@ li {
   flex-grow: 1;
   padding: 22px;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content p {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent p {
   color: #D4C4B0;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content > p {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent > p {
   font-size: 0.7rem;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .card-title {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .cardTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .card-title h2 {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .cardTitle h2 {
   font-size: 1.8rem;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .card-title p {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .cardTitle p {
   margin-top: 8px;
   font-size: 0.9rem;
   color: #ffc665;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .content-burguer {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .contentBurguer {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 16px;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .content-burguer .content-title {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .contentBurguer .contentTitle {
   background-color: rgba(53, 53, 52, 0.8);
   border-radius: 8px;
   max-width: max-content;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .content-burguer p {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .contentBurguer p {
   padding: 4px;
   margin: 0;
   font-size: 0.7rem;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .button-card {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard {
   width: 100%;
   border: none;
   border-radius: 16px;
@@ -426,13 +426,13 @@ li {
   padding: 14px 16px;
   background-color: rgba(53, 53, 52, 0.8);
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .button-card .button-content {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard .buttonContent {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content .button-card a {
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard a {
   font-weight: 500;
   letter-spacing: 0.04em;
   margin-right: 5px;
@@ -466,23 +466,23 @@ li {
   font-size: 0.8rem;
   padding: 10px;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .ubi-de {
+.dondeEncontrarnos .dondeEncontrarnosText .ubiDe {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .ubi-de span {
+.dondeEncontrarnos .dondeEncontrarnosText .ubiDe span {
   margin-bottom: 8px;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe {
   display: grid;
   grid-template-areas: "ubicacion" "telefono" "horario";
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr;
   column-gap: 40px;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -491,39 +491,39 @@ li {
   padding: 30px 20px;
   border-radius: 25px;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de:nth-child(1) {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe:nth-child(1) {
   grid-area: ubicacion;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de:nth-child(2) {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe:nth-child(2) {
   grid-area: telefono;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de:nth-child(3) {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe:nth-child(3) {
   grid-area: horario;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .logo-art {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .logoArt {
   background-color: rgba(53, 53, 52, 0.8);
   padding: 10px;
   border-radius: 15px;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .logo-art svg {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .logoArt svg {
   margin-bottom: 4px;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de h4 {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe h4 {
   margin-top: 10px;
   color: #ffffff;
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: 700;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de p {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe p {
   margin: 0;
   opacity: 1;
   font-weight: 500;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de > p {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe > p {
   margin-bottom: 20px;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .more-info {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .moreInfo {
   background-color: rgba(53, 53, 52, 0.8);
   padding: 2px 8px;
   border-radius: 14px;
@@ -532,29 +532,29 @@ li {
   align-items: center;
   margin-top: auto;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .more-info p {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .moreInfo p {
   letter-spacing: 0.04em;
   color: #ffc665;
   margin-bottom: 2px;
   font-size: 0.6rem;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .buttonMoreInfo {
   background-color: rgba(53, 53, 52, 0.8);
   padding: 3px 8px;
   border-radius: 14px;
   border: 0;
   margin-top: auto;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info a {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .buttonMoreInfo a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info svg {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .buttonMoreInfo svg {
   margin-bottom: 2px;
 }
-.dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info p {
+.dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .buttonMoreInfo p {
   letter-spacing: 0.04em;
   color: #ffc665;
   margin-bottom: 2px;
@@ -563,50 +563,50 @@ li {
 }
 
 @media (min-width: 400px) {
-  .hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content > p {
+  .hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent > p {
     font-size: 1rem;
   }
 }
 @media (min-width: 420px) {
-  .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .more-info p,
-  .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de .button-more-info p {
+  .dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .moreInfo p,
+  .dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe .buttonMoreInfo p {
     font-size: 0.7rem;
   }
 }
 @media (min-width: 450px) {
-  .hero .masElegidas .titulo-elegidas > h2 {
+  .hero .masElegidas .tituloElegidas > h2 {
     font-size: 2rem;
   }
 }
 @media (min-width: 500px) {
-  .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de {
+  .dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe {
     padding: 50px;
   }
 }
 @media (min-width: 580px) {
-  .hero .sobre-nosotros .hero-text {
+  .hero .sobreNosotros .heroText {
     padding-inline: 0;
   }
-  .hero .sobre-nosotros .hero-text h1 {
+  .hero .sobreNosotros .heroText h1 {
     font-size: 4rem;
     margin-top: 0;
   }
-  .hero .sobre-nosotros .hero-text p {
+  .hero .sobreNosotros .heroText p {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 600px) {
-  .hero .sobre-nosotros .hero-img {
+  .hero .sobreNosotros .heroImg {
     width: 50%;
   }
-  .hero .sobre-nosotros .hero-text .btn-pedidos {
+  .hero .sobreNosotros .heroText .btnPedidos {
     font-size: 1rem;
     margin-block: 15px;
   }
-  .hero .sobre-nosotros .hero-text .under-btn {
+  .hero .sobreNosotros .heroText .underBtn {
     margin-block: 0;
   }
-  .hero .sobre-nosotros .hero-text .under-btn p {
+  .hero .sobreNosotros .heroText .underBtn p {
     font-size: 0.7rem;
     margin: 16px 7px 1rem;
   }
@@ -624,23 +624,23 @@ li {
   }
 }
 @media (min-width: 768px) {
-  .hero .sobre-nosotros {
+  .hero .sobreNosotros {
     width: min(100% - 2rem, 1400px);
     margin-inline: auto;
   }
-  .hero .sobre-nosotros .hero-text {
+  .hero .sobreNosotros .heroText {
     justify-self: start;
   }
-  .hero .masElegidas .titulo-elegidas {
+  .hero .masElegidas .tituloElegidas {
     display: block;
   }
-  .hero .masElegidas .titulo-elegidas .ranking-bp {
+  .hero .masElegidas .tituloElegidas .rankingBp {
     justify-content: flex-start;
   }
-  .hero .masElegidas .titulo-elegidas > h2 {
+  .hero .masElegidas .tituloElegidas > h2 {
     text-align: left;
   }
-  .dondeEncontrarnos .dondeEncontrarnosText .ubi-de {
+  .dondeEncontrarnos .dondeEncontrarnosText .ubiDe {
     justify-content: flex-start;
   }
   .dondeEncontrarnos .dondeEncontrarnosText > h2,
@@ -654,37 +654,37 @@ li {
   }
 }
 @media (min-width: 1100px) {
-  .hero .sobre-nosotros .hero-img {
+  .hero .sobreNosotros .heroImg {
     width: 35%;
   }
 }
 @media (min-width: 1200px) {
-  .hero .masElegidas .titulo-elegidas .top3 {
+  .hero .masElegidas .tituloElegidas .top3 {
     grid-template-areas: "primero segundo tercero";
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .hero .masElegidas .titulo-elegidas .top3 .card-bp {
+  .hero .masElegidas .tituloElegidas .top3 .cardBp {
     max-width: none;
   }
-  .dondeEncontrarnos .dondeEncontrarnosText .info-de {
+  .dondeEncontrarnos .dondeEncontrarnosText .infoDe {
     grid-template-areas: "ubicacion telefono horario";
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @media (min-width: 1400px) {
-  .hero .sobre-nosotros {
+  .hero .sobreNosotros {
     grid-template-areas: "texto imagen";
     grid-template-columns: 1fr 45%;
     justify-items: normal;
     align-items: center;
     padding-block: 120px;
   }
-  .hero .sobre-nosotros .hero-img {
+  .hero .sobreNosotros .heroImg {
     width: 100%;
   }
 }
 @media (min-width: 1600px) {
-  .hero .masElegidas .titulo-elegidas > h2 {
+  .hero .masElegidas .tituloElegidas > h2 {
     font-size: 2.8rem;
   }
 }
@@ -698,29 +698,29 @@ li {
   justify-items: center;
   padding-bottom: 40px;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas {
+.mainMenu .heroHamburguesas .artHamburguesas {
   grid-area: presentacion;
   display: grid;
   grid-template-areas: "texto" "estadisticas";
   justify-items: center;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas h1 {
+.mainMenu .heroHamburguesas .artHamburguesas h1 {
   font-weight: 800;
   font-size: 2rem;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas h1 span {
+.mainMenu .heroHamburguesas .artHamburguesas h1 span {
   font-style: italic;
   color: #ffc665;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas p {
+.mainMenu .heroHamburguesas .artHamburguesas p {
   color: #D4C4B0;
   font-size: 0.7rem;
   margin: 0;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas .text-hero {
+.mainMenu .heroHamburguesas .artHamburguesas .textHero {
   grid-area: texto;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas .art-right {
+.mainMenu .heroHamburguesas .artHamburguesas .artRight {
   background-color: rgba(42, 42, 42, 0.9019607843);
   padding: 15px;
   border-radius: 15px;
@@ -728,24 +728,24 @@ li {
   display: flex;
   margin-top: 20px;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero:first-child {
+.mainMenu .heroHamburguesas .artHamburguesas .artRight .childrenHero:first-child {
   padding-right: 20px;
   border-right: 1px solid rgba(157, 143, 124, 0.18);
 }
-.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero:last-child {
+.mainMenu .heroHamburguesas .artHamburguesas .artRight .childrenHero:last-child {
   padding-left: 20px;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero h4 {
+.mainMenu .heroHamburguesas .artHamburguesas .artRight .childrenHero h4 {
   font-weight: 700;
   color: #ffc665;
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   margin: 0;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero span h4 {
+.mainMenu .heroHamburguesas .artHamburguesas .artRight .childrenHero span h4 {
   color: #ffffff;
 }
-.mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero p {
+.mainMenu .heroHamburguesas .artHamburguesas .artRight .childrenHero p {
   color: #D4C4B0;
   font-weight: 300;
   font-size: 0.5rem;
@@ -800,25 +800,25 @@ li {
   margin-top: 50px;
   padding-bottom: 60px;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu {
   display: flex;
   flex-direction: column;
   border-radius: 24px;
   padding: 20px;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu img {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 20px;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu p {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu p {
   font-weight: 500;
   color: #D4C4B0;
   border-bottom: 1px solid rgba(53, 53, 52, 0.8);
   padding-bottom: 15px;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu div {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -826,17 +826,17 @@ li {
   margin-top: 15px;
   margin-bottom: 8px;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu div h3 {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu div h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu div span {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu div span {
   background-color: rgba(53, 53, 52, 0.8);
   padding: 3px 5px;
   border-radius: 10px;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu div span p {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu div span p {
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.06em;
@@ -844,18 +844,18 @@ li {
   padding: 0;
   color: #ffc665;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu .button-menu {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu {
   margin-top: auto;
   padding: 8px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu .button-menu a {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu a {
   color: #000000;
   font-weight: 500;
 }
-.mainMenu .hamburguesasSeccion .hamburguesas .card-bp-menu .button-menu svg {
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu svg {
   margin-bottom: 3px;
   margin-right: 5px;
 }
@@ -927,7 +927,7 @@ li {
   align-items: center;
   max-width: max-content;
 }
-.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .paraPicarHeroInfo .estrella .p-estrella {
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .paraPicarHero .paraPicarHeroInfo .estrella .pEstrella {
   color: #ffc665;
   margin-top: 1px;
   margin-left: 3px;
@@ -968,7 +968,7 @@ li {
   grid-template-columns: 1fr;
   gap: 30px;
 }
-.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks {
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .cardSnacks {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -976,32 +976,32 @@ li {
   border: 1px solid rgba(157, 143, 124, 0.18);
   border-radius: 20px;
 }
-.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks img {
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .cardSnacks img {
   width: 100%;
   height: 240px;
   object-fit: cover;
   border-radius: 20px;
   margin-bottom: 10px;
 }
-.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks div {
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .cardSnacks div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin-top: 10px;
 }
-.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks div h3 {
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .cardSnacks div h3 {
   font-weight: 700;
   margin: 0;
   font-size: 1rem;
 }
-.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks div h4 {
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .cardSnacks div h4 {
   font-weight: 600;
   margin: 0;
   font-size: 0.9rem;
   color: #ffc665;
 }
-.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .card-snacks p {
+.mainMenu .paraPicar .contenedorParaPicar .paraPicarSeccion .snacksParaPicar .cardSnacks p {
   opacity: 0.8;
   margin-top: 5px;
   margin-bottom: 0;
@@ -1134,16 +1134,16 @@ li {
   }
 }
 @media (min-width: 960px) {
-  .mainMenu .heroHamburguesas .art-hamburguesas h1 {
+  .mainMenu .heroHamburguesas .artHamburguesas h1 {
     font-size: 4rem;
   }
-  .mainMenu .heroHamburguesas .art-hamburguesas p {
+  .mainMenu .heroHamburguesas .artHamburguesas p {
     font-size: 1.1rem;
   }
-  .mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero h4 {
+  .mainMenu .heroHamburguesas .artHamburguesas .artRight .childrenHero h4 {
     font-size: 2.2rem;
   }
-  .mainMenu .heroHamburguesas .art-hamburguesas .art-right .children-hero p {
+  .mainMenu .heroHamburguesas .artHamburguesas .artRight .childrenHero p {
     font-size: 0.75rem;
   }
   .mainMenu .heroHamburguesas .infoDiasHorarios div svg {
@@ -1169,13 +1169,13 @@ li {
   .mainMenu .heroHamburguesas {
     justify-items: normal;
   }
-  .mainMenu .heroHamburguesas .art-hamburguesas {
+  .mainMenu .heroHamburguesas .artHamburguesas {
     grid-template-areas: "texto estadisticas";
     justify-content: space-between;
     justify-items: normal;
     align-items: end;
   }
-  .mainMenu .heroHamburguesas .art-hamburguesas .art-right {
+  .mainMenu .heroHamburguesas .artHamburguesas .artRight {
     margin-top: 0;
   }
 }

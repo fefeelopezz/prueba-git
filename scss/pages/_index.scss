@@ -4,7 +4,7 @@
 
 .hero{
     width: 100%;
-    .sobre-nosotros{
+    .sobreNosotros{
         @extend %separador-seccion;
         display: grid;
         grid-template-areas:
@@ -12,7 +12,7 @@
             "imagen";
         justify-items: center;
         padding-block: 60px;
-        .hero-text{
+        .heroText{
             @include flex(center, start, column);
             grid-area: texto;
             width: 100%;
@@ -34,7 +34,7 @@
                 color: $colorTitulosSpan;
                 font-weight: 700;
             }
-            .btn-pedidos{
+            .btnPedidos{
                 @extend %boton-dorado;
                 padding: 13px;
                 cursor: pointer;
@@ -55,7 +55,7 @@
                     margin-right: 5px;
                 }
             }
-            .under-btn{
+            .underBtn{
                 display: flex;
                 align-items: center;
                 margin-block: 10px;
@@ -66,7 +66,7 @@
                 }
             }
         }
-        .hero-img{
+        .heroImg{
             grid-area: imagen;
             width: 80%;
             object-fit: cover;
@@ -87,11 +87,11 @@
                 color: $colorTitulosSpan;
             }
         }
-        .titulo-elegidas{
+        .tituloElegidas{
             @include flex(center, center, column);
             width: min(100% - 2rem, 1400px);
             margin-inline: auto;
-            .ranking-bp{
+            .rankingBp{
                 @include flex(center, center, row);
                 margin-bottom: 20px;
                 span{
@@ -123,7 +123,7 @@
                 gap: 90px;
                 width: 100%;
                 margin-top: 30px;
-                .card-bp{
+                .cardBp{
                     @extend %card-oscura;
                     display: flex;
                     flex-direction: column;
@@ -139,13 +139,13 @@
                     &:nth-child(3){
                         grid-area: tercero;
                     }
-                    .img-card{
+                    .imgCard{
                         width: 100%;
                         aspect-ratio: 4 / 3;
                         border-radius: 24px 24px 0 0;
                         object-fit: cover;
                     }
-                    .card-content{
+                    .cardContent{
                         @include flex(flex-start, stretch, column);
                         flex-grow: 1;
                         padding: 22px;
@@ -155,7 +155,7 @@
                         > p{
                             font-size: 0.7rem;
                         }
-                        .card-title{
+                        .cardTitle{
                             @include flex(space-between, center, row);
                             h2{
                                 font-size: 1.8rem;
@@ -168,12 +168,12 @@
                                 letter-spacing: 0.04em;
                             }
                         }
-                        .content-burguer{
+                        .contentBurguer{
                             display: flex;
                             flex-wrap: wrap;
                             gap: 8px;
                             margin-bottom: 16px;
-                            .content-title{
+                            .contentTitle{
                                 background-color: $colorSpanCards;
                                 border-radius: 8px;
                                 max-width: max-content;
@@ -184,14 +184,14 @@
                                 font-size: 0.7rem;
                             }
                         }
-                        .button-card{
+                        .buttonCard{
                             width: 100%;
                             border: none;
                             border-radius: 16px;
                             margin-top: auto;
                             padding: 14px 16px;
                             background-color: $colorSpanCards;
-                            .button-content{
+                            .buttonContent{
                                 @include flex(center, center, row);
                             }
                             a{
@@ -234,14 +234,14 @@
             font-size: 0.8rem;
             padding: 10px;
         }
-        .ubi-de{
+        .ubiDe{
             @include flex(center, center, row);
             span{
                 margin-bottom: 8px;
             }
         }
 
-        .info-de{
+        .infoDe{
             display: grid;
             grid-template-areas:
                 "ubicacion"
@@ -250,7 +250,7 @@
             grid-template-columns: 1fr;
             grid-auto-rows: 1fr;
             column-gap: 40px;
-            .article-de{
+            .articleDe{
                 @extend %card-oscura;
                 @include flex(flex-start, center, column);
                 margin-top: 40px;
@@ -265,7 +265,7 @@
                 &:nth-child(3){
                     grid-area: horario;
                 }
-                .logo-art{
+                .logoArt{
                     @include pastilla($padding: 10px, $radio: 15px);
                     svg{
                         margin-bottom: 4px;
@@ -286,7 +286,7 @@
                 > p{
                     margin-bottom: 20px;
                 }
-                .more-info{
+                .moreInfo{
                     @include pastilla($padding: 2px 8px, $radio: 14px);
                     display: inline-flex;
                     justify-content: center;
@@ -299,7 +299,7 @@
                         font-size: 0.6rem;
                     }
                 }
-                .button-more-info{
+                .buttonMoreInfo{
                     @include pastilla($padding: 3px 8px, $radio: 14px);
                     border: 0;
                     margin-top: auto;
@@ -323,34 +323,34 @@
 }
 
 @media (min-width: 400px){
-    .hero .masElegidas .titulo-elegidas .top3 .card-bp .card-content > p{
+    .hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent > p{
         font-size: 1rem;
     }
 }
 
 @media (min-width: 420px){
-    .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de{
-        .more-info p,
-        .button-more-info p{
+    .dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe{
+        .moreInfo p,
+        .buttonMoreInfo p{
             font-size: 0.7rem;
         }
     }
 }
 
 @media (min-width: 450px){
-    .hero .masElegidas .titulo-elegidas > h2{
+    .hero .masElegidas .tituloElegidas > h2{
         font-size: 2rem;
     }
 }
 
 @media (min-width: 500px){
-    .dondeEncontrarnos .dondeEncontrarnosText .info-de .article-de{
+    .dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe{
         padding: 50px;
     }
 }
 
 @media (min-width: 580px){
-    .hero .sobre-nosotros .hero-text{
+    .hero .sobreNosotros .heroText{
         padding-inline: 0;
         h1{
             font-size: 4rem;
@@ -363,16 +363,16 @@
 }
 
 @media (min-width: 600px){
-    .hero .sobre-nosotros{
-        .hero-img{
+    .hero .sobreNosotros{
+        .heroImg{
             width: 50%;
         }
-        .hero-text{
-            .btn-pedidos{
+        .heroText{
+            .btnPedidos{
                 font-size: 1rem;
                 margin-block: 15px;
             }
-            .under-btn{
+            .underBtn{
                 margin-block: 0;
                 p{
                     font-size: 0.7rem;
@@ -400,16 +400,16 @@
 
 @media (min-width: 768px){
     .hero{
-        .sobre-nosotros{
+        .sobreNosotros{
             width: min(100% - 2rem, 1400px);
             margin-inline: auto;
-            .hero-text{
+            .heroText{
                 justify-self: start;
             }
         }
-        .masElegidas .titulo-elegidas{
+        .masElegidas .tituloElegidas{
             display: block;
-            .ranking-bp{
+            .rankingBp{
                 justify-content: flex-start;
             }
             > h2{
@@ -419,7 +419,7 @@
     }
 
     .dondeEncontrarnos .dondeEncontrarnosText{
-        .ubi-de{
+        .ubiDe{
             justify-content: flex-start;
         }
         > h2,
@@ -436,41 +436,41 @@
 }
 
 @media (min-width: 1100px){
-    .hero .sobre-nosotros .hero-img{
+    .hero .sobreNosotros .heroImg{
         width: 35%;
     }
 }
 
 @media (min-width: 1200px){
-    .hero .masElegidas .titulo-elegidas .top3{
+    .hero .masElegidas .tituloElegidas .top3{
         grid-template-areas: "primero segundo tercero";
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        .card-bp{
+        .cardBp{
             max-width: none;
         }
     }
 
-    .dondeEncontrarnos .dondeEncontrarnosText .info-de{
+    .dondeEncontrarnos .dondeEncontrarnosText .infoDe{
         grid-template-areas: "ubicacion telefono horario";
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
 @media (min-width: 1400px){
-    .hero .sobre-nosotros{
+    .hero .sobreNosotros{
         grid-template-areas: "texto imagen";
         grid-template-columns: 1fr 45%;
         justify-items: normal;
         align-items: center;
         padding-block: 120px;
-        .hero-img{
+        .heroImg{
             width: 100%;
         }
     }
 }
 
 @media (min-width: 1600px){
-    .hero .masElegidas .titulo-elegidas > h2{
+    .hero .masElegidas .tituloElegidas > h2{
         font-size: 2.8rem;
     }
 }
