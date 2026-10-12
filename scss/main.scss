@@ -10,6 +10,8 @@
 
 @use "./pages/index" as *;
 @use "./pages/menu" as *;
+@use "./pages/pedidos" as *;
+@use "./pages/promos" as *;
 
 body{
     background-color: $colorFondo;
