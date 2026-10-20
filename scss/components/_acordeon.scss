@@ -1,0 +1,67 @@
+@use '../utilites/variables' as *;
+@use '../utilites/mixins' as *;
+@use '../utilites/extends' as *;
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    .accordion-item{
+        @extend %card-oscura;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: border-color 0.2s;
+        .accordion-header{
+            @include flex(space-between, center, row);
+            gap: 12px;
+            padding: 18px 20px;
+            list-style: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: $colorTitulos;
+            &::-webkit-details-marker{
+                display: none;
+            }
+            .accordion-icon{
+                flex-shrink: 0;
+                width: 1rem;
+                height: 1rem;
+                color: $colorTitulosSpan;
+                stroke-width: 2;
+                transition: transform 0.2s;
+            }
+        }
+        .accordion-body{
+            padding: 0 20px 18px;
+            color: $colorTextos;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            strong{
+                color: $colorTitulosSpan;
+                font-weight: 600;
+            }
+        }
+        &:hover{
+            border-color: #ffc7653a;
+        }
+        &[open]{
+            border-color: #ffc7657a;
+            .accordion-header .accordion-icon{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .accordion .accordion-item{
+        .accordion-header{
+            font-size: 1.1rem;
+            padding: 22px 26px;
+        }
+        .accordion-body{
+            font-size: 1rem;
+            padding: 0 26px 22px;
+        }
+    }
+}
