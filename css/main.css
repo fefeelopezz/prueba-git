@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-.contactoPagina .contactoCanales .canalCard, .contactoPagina .contactoHorarios .horariosSemana .listaDias, .contactoPagina .contactoHorarios .horariosUbicacion, .promosPagina .promosGrilla .promosGrillaCards .promoCard, .promosPagina .promosCondiciones .condicionItem, .mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu, .hero .masElegidas .tituloElegidas .top3 .cardBp, .dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe, .accordion .accordion-item, .pedidosFooter {
+.contactoPagina .contactoCanales .canalCard, .contactoPagina .contactoHorarios .horariosSemana .listaDias, .contactoPagina .contactoHorarios .horariosUbicacion, .promosPagina .promosGrilla .promosGrillaCards .promoCard, .promosPagina .promosCondiciones .condicionItem, .pedidosPagina .pedidosPasos .pasosGrilla .pasoCard, .pedidosPagina .pedidosMensaje .mensajeLista, .pedidosPagina .pedidosInfo .infoCard, .mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu, .hero .masElegidas .tituloElegidas .top3 .cardBp, .dondeEncontrarnos .dondeEncontrarnosText .infoDe .articleDe, .accordion .accordion-item, .pedidosFooter {
   background: rgba(32, 31, 31, 0.9490196078);
   border: 1px solid rgba(157, 143, 124, 0.18);
 }
 
-.contactoPagina .contactoCanales .canalCard.canalCard-destacado .canalAccion, .contactoPagina .contactoHorarios .horariosUbicacion .ubicacionBoton, .promosPagina .promosGrilla .promosGrillaCards .promoCard .promoCardContenido .promoCardBoton, .mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu, .hero .sobreNosotros .heroText .btnPedidos {
+.contactoPagina .contactoCanales .canalCard.canalCard-destacado .canalAccion, .contactoPagina .contactoHorarios .horariosUbicacion .ubicacionBoton, .promosPagina .promosGrilla .promosGrillaCards .promoCard .promoCardContenido .promoCardBoton, .pedidosPagina .pedidosBotonPrincipal, .mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu, .hero .sobreNosotros .heroText .btnPedidos {
   border: 2px solid #e5a93c;
   background-color: #e5a93c;
   border-radius: 15px;
 }
 
-.contactoPagina .contactoHero, .contactoPagina .contactoCanales, .contactoPagina .contactoHorarios, .promosPagina .promosHero, .promosPagina .promosGrilla, .promosPagina .promosCondiciones, .mainMenu .heroHamburguesas, .mainMenu .hamburguesasSeccion, .mainMenu .paraPicar, .hero .sobreNosotros, .hero .masElegidas, .dondeEncontrarnos {
+.contactoPagina .contactoHero, .contactoPagina .contactoCanales, .contactoPagina .contactoHorarios, .promosPagina .promosHero, .promosPagina .promosGrilla, .promosPagina .promosCondiciones, .pedidosPagina .pedidosHero, .pedidosPagina .pedidosPasos, .pedidosPagina .pedidosMensaje, .mainMenu .heroHamburguesas, .mainMenu .hamburguesasSeccion, .mainMenu .paraPicar, .hero .sobreNosotros, .hero .masElegidas, .dondeEncontrarnos {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-image: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)) 0 0 1 0/0 0 1px 0/0 100vw;
 }
@@ -124,7 +124,7 @@
 }
 .pedidosFooter .btnFooter .wpFooter a,
 .pedidosFooter .btnFooter .igFooter a {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   letter-spacing: 0.04em;
 }
 .pedidosFooter .btnFooter .wpFooter svg,
@@ -134,14 +134,22 @@
 .pedidosFooter .btnFooter .wpFooter {
   background-color: #ffc665;
   box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
+  transition: all 0.3s ease;
 }
 .pedidosFooter .btnFooter .wpFooter a {
   color: #000000;
   font-weight: 600;
 }
+.pedidosFooter .btnFooter .wpFooter:hover {
+  background-color: #e5a93c;
+}
 .pedidosFooter .btnFooter .igFooter {
   background-color: rgba(53, 53, 52, 0.8);
   margin-top: 10px;
+  transition: all 0.4s ease;
+}
+.pedidosFooter .btnFooter .igFooter:hover {
+  background-color: rgba(199, 156, 82, 0.2941176471);
 }
 .pedidosFooter .btnFooter .igFooter a {
   color: #ffffff;
@@ -329,6 +337,7 @@ li {
   font-size: 0.8rem;
   font-weight: 500;
   box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
+  transition: all 0.3s ease;
 }
 .hero .sobreNosotros .heroText .btnPedidos a {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -342,6 +351,10 @@ li {
 .hero .sobreNosotros .heroText .btnPedidos .svg-btn {
   margin-bottom: 4px;
   margin-right: 5px;
+}
+.hero .sobreNosotros .heroText .btnPedidos:hover {
+  background-color: #ffc665;
+  transform: translateY(-4px);
 }
 .hero .sobreNosotros .heroText .underBtn {
   display: flex;
@@ -419,6 +432,12 @@ li {
   width: 100%;
   max-width: 420px;
   border-radius: 24px;
+  transition: all 0.4s ease;
+}
+.hero .masElegidas .tituloElegidas .top3 .cardBp:hover {
+  border: 1px solid rgba(255, 199, 101, 0.4784313725);
+  box-shadow: 0 0 30px rgba(255, 198, 101, 0.12);
+  transform: translateY(-2px);
 }
 .hero .masElegidas .tituloElegidas .top3 .cardBp:nth-child(1) {
   grid-area: primero;
@@ -488,12 +507,16 @@ li {
   margin-top: auto;
   padding: 14px 16px;
   background-color: rgba(53, 53, 52, 0.8);
+  transition: all 0.4s ease;
 }
 .hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard .buttonContent {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard .buttonContent:hover svg {
+  transform: translateX(4px);
 }
 .hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard a {
   font-weight: 500;
@@ -868,6 +891,12 @@ li {
   flex-direction: column;
   border-radius: 24px;
   padding: 20px;
+  transition: all 0.4s ease;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu:hover {
+  border: 1px solid rgba(255, 199, 101, 0.4784313725);
+  box-shadow: 0 0 30px rgba(255, 198, 101, 0.12);
+  transform: translateY(-2px);
 }
 .mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu img {
   width: 100%;
@@ -921,6 +950,15 @@ li {
 .mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu svg {
   margin-bottom: 3px;
   margin-right: 5px;
+  transition: transform 0.1s ease;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu:hover {
+  background-color: #ffc665;
+  color: #000000;
+  transition: 0.3s;
+}
+.mainMenu .hamburguesasSeccion .hamburguesas .cardBpMenu .buttonMenu:hover svg {
+  transform: translateX(-4px);
 }
 .mainMenu .paraPicar {
   margin-top: 40px;
@@ -1247,6 +1285,337 @@ li {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+.pedidosPagina {
+  width: min(100% - 2rem, 1400px);
+  margin-inline: auto;
+}
+.pedidosPagina .pedidosEtiqueta {
+  color: #ffc665;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+}
+.pedidosPagina .pedidosTitulo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.pedidosPagina .pedidosTitulo span {
+  color: #ffc665;
+  font-style: italic;
+}
+.pedidosPagina .pedidosBotonPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: inline-flex;
+  gap: 8px;
+  padding: 12px 22px;
+  color: #000000;
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
+  transition: transform 0.2s, background-color 0.2s;
+}
+.pedidosPagina .pedidosBotonPrincipal:hover {
+  background-color: #ffc665;
+  color: #000000;
+  transform: translateY(-2px);
+}
+.pedidosPagina .pedidosBotonSecundario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: inline-flex;
+  gap: 8px;
+  padding: 12px 22px;
+  border: 2px solid #e5a93c;
+  border-radius: 15px;
+  color: #ffc665;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+.pedidosPagina .pedidosBotonSecundario svg {
+  transition: transform 0.2s;
+}
+.pedidosPagina .pedidosBotonSecundario:hover {
+  background-color: rgba(199, 156, 82, 0.2941176471);
+  color: #ffc665;
+}
+.pedidosPagina .pedidosBotonSecundario:hover svg {
+  transform: translateX(4px);
+}
+.pedidosPagina .pedidosHero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-block: 50px;
+}
+.pedidosPagina .pedidosHero h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.pedidosPagina .pedidosHero h1 span {
+  font-style: italic;
+  color: #ffc665;
+}
+.pedidosPagina .pedidosHero .pedidosHeroTexto {
+  color: #D4C4B0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 560px;
+  margin-top: 10px;
+}
+.pedidosPagina .pedidosHero .pedidosHeroBotones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+.pedidosPagina .pedidosPasos {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.pedidosPagina .pedidosPasos .pasosGrilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+.pedidosPagina .pedidosPasos .pasosGrilla .pasoCard {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  border-radius: 24px;
+  padding: 30px 22px;
+  transition: transform 0.25s, border-color 0.25s;
+}
+.pedidosPagina .pedidosPasos .pasosGrilla .pasoCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 199, 101, 0.4784313725);
+}
+.pedidosPagina .pedidosPasos .pasosGrilla .pasoCard .pasoNumero {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #e5a93c;
+}
+.pedidosPagina .pedidosPasos .pasosGrilla .pasoCard h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.pedidosPagina .pedidosPasos .pasosGrilla .pasoCard p {
+  color: #D4C4B0;
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+.pedidosPagina .pedidosPasos .pasosGrilla .pasoCard .pasoLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pedidosPagina .pedidosPasos .pasosGrilla .pasoCard .pasoLinks a {
+  background-color: rgba(199, 156, 82, 0.2941176471);
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #ffc665;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  transition: background-color 0.2s, color 0.2s;
+}
+.pedidosPagina .pedidosPasos .pasosGrilla .pasoCard .pasoLinks a:hover {
+  background-color: #e5a93c;
+  color: #000000;
+}
+.pedidosPagina .pedidosMensaje {
+  display: grid;
+  grid-template-areas: "texto" "chat";
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.pedidosPagina .pedidosMensaje .mensajeTexto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  grid-area: texto;
+  text-align: center;
+}
+.pedidosPagina .pedidosMensaje .mensajeTexto .mensajeDescripcion {
+  color: #D4C4B0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.pedidosPagina .pedidosMensaje .mensajeTexto .pedidosBotonPrincipal {
+  margin-top: 10px;
+}
+.pedidosPagina .pedidosMensaje .mensajeLista {
+  grid-area: chat;
+  justify-self: center;
+  width: 100%;
+  max-width: 460px;
+  border-radius: 24px;
+  padding: 8px 22px;
+  margin: 0;
+}
+.pedidosPagina .pedidosMensaje .mensajeLista li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-block: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pedidosPagina .pedidosMensaje .mensajeLista li:last-child {
+  border-bottom: 0;
+}
+.pedidosPagina .pedidosMensaje .mensajeLista li span {
+  background-color: rgba(199, 156, 82, 0.2941176471);
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-family: "Playfair Display", serif;
+  color: #ffc665;
+  font-weight: 700;
+}
+.pedidosPagina .pedidosMensaje .mensajeLista li p {
+  font-weight: 600;
+  margin: 0;
+}
+.pedidosPagina .pedidosInfo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  margin-block: 50px;
+}
+.pedidosPagina .pedidosInfo .infoCard {
+  text-align: center;
+  border-radius: 25px;
+  padding: 30px 20px;
+}
+.pedidosPagina .pedidosInfo .infoCard .infoIcono {
+  background-color: rgba(53, 53, 52, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-flex;
+}
+.pedidosPagina .pedidosInfo .infoCard h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.pedidosPagina .pedidosInfo .infoCard p {
+  color: #D4C4B0;
+  font-size: 0.85rem;
+  margin: 0;
+}
+.pedidosPagina .pedidosInfo .infoCard .infoPagos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.pedidosPagina .pedidosInfo .infoCard .infoPagos span {
+  background-color: rgba(42, 42, 42, 0.9019607843);
+  padding: 4px 10px;
+  border-radius: 10px;
+  color: #ffc665;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+.pedidosPagina .pedidosInfo .infoAviso {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(199, 156, 82, 0.2941176471);
+  border: 1px dashed #e5a93c;
+  border-radius: 20px;
+}
+.pedidosPagina .pedidosInfo .infoAviso h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #ffc665;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.pedidosPagina .pedidosInfo .infoAviso p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  .pedidosPagina .pedidosHero h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .pedidosPagina .pedidosTitulo {
+    font-size: 2.5rem;
+  }
+  .pedidosPagina .pedidosHero {
+    align-items: flex-start;
+    text-align: start;
+    padding-block: 100px 80px;
+  }
+  .pedidosPagina .pedidosHero h1 {
+    font-size: 4rem;
+  }
+  .pedidosPagina .pedidosHero .pedidosHeroTexto {
+    font-size: 1.1rem;
+  }
+  .pedidosPagina .pedidosPasos {
+    text-align: start;
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pedidosPagina .pedidosMensaje {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pedidosPagina .pedidosMensaje .mensajeTexto {
+    align-items: flex-start;
+    text-align: start;
+  }
+  .pedidosPagina .pedidosMensaje .mensajeTexto .mensajeDescripcion {
+    font-size: 1rem;
+  }
+  .pedidosPagina .pedidosInfo {
+    margin-block: 80px;
+  }
+}
+@media (min-width: 900px) {
+  .pedidosPagina .pedidosPasos .pasosGrilla {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .pedidosPagina .pedidosInfo {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .pedidosPagina .pedidosInfo .infoAviso {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 1000px) {
+  .pedidosPagina .pedidosMensaje {
+    grid-template-areas: "texto chat";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pedidosPagina .pedidosMensaje .mensajeLista {
+    justify-self: end;
+  }
+}
 .promosPagina {
   width: min(100% - 2rem, 1400px);
   margin-inline: auto;
@@ -1324,10 +1693,12 @@ li {
   flex-direction: column;
   border-radius: 24px;
   padding: 14px;
+  transition: all 0.4s ease;
 }
-.promosPagina .promosGrilla .promosGrillaCards .promoCard.promoCard-destacada {
+.promosPagina .promosGrilla .promosGrillaCards .promoCard:hover {
   border: 1px solid rgba(255, 199, 101, 0.4784313725);
   box-shadow: 0 0 30px rgba(255, 198, 101, 0.12);
+  transform: translateY(-2px);
 }
 .promosPagina .promosGrilla .promosGrillaCards .promoCard .promoCardImagen {
   width: 100%;
@@ -1416,9 +1787,16 @@ li {
   font-weight: 500;
   box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
 }
+.promosPagina .promosGrilla .promosGrillaCards .promoCard .promoCardContenido .promoCardBoton svg {
+  transition: transform 0.1s ease;
+}
 .promosPagina .promosGrilla .promosGrillaCards .promoCard .promoCardContenido .promoCardBoton:hover {
   background-color: #ffc665;
   color: #000000;
+  transition: 0.3s;
+}
+.promosPagina .promosGrilla .promosGrillaCards .promoCard .promoCardContenido .promoCardBoton:hover svg {
+  transform: translateX(-4px);
 }
 .promosPagina .promosCondiciones {
   display: grid;
