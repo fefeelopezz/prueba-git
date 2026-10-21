@@ -1,3 +1,322 @@
 @use "../utilites/extends";
 @use "../utilites/mixins" as *;
 @use "../utilites/variables" as *;
+
+.promosPagina{
+    width: min(100% - 2rem, 1400px);
+    margin-inline: auto;
+    .promosHero{
+        @extend %separador-seccion;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-block: 50px;
+        h1{
+            font-weight: 800;
+            font-size: 2rem;
+            margin-top: 15px;
+            span{
+                font-style: italic;
+                color: $colorTitulosSpan;
+            }
+        }
+        .promosHeroTexto{
+            color: $colorTextos;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-top: 10px;
+            br{
+                display: none;
+            }
+        }
+        .promosHeroHorario{
+            @include pastilla($colorPastillas, 5px 10px, 10px);
+            display: flex;
+            align-items: center;
+            max-width: max-content;
+            margin-top: 20px;
+            p{
+                margin: 0 0 0 6px;
+                font-size: 0.65rem;
+                color: $colorTextos;
+                opacity: 0.7;
+                letter-spacing: 0.04em;
+            }
+        }
+    }
+    .promosGrilla{
+        @extend %separador-seccion;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        .promosSeccionEtiqueta{
+            text-align: center;
+            color: $colorTitulosSpan;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            font-size: 0.8rem;
+        }
+        .promosSeccionTitulo{
+            text-align: center;
+            font-family: $fuenteTitulos;
+            font-size: 1.8rem;
+            font-weight: 800;
+            span{
+                color: $colorTitulosSpan;
+                font-style: italic;
+            }
+        }
+        .promosGrillaCards{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 40px;
+            .promoCard{
+                @extend %card-oscura;
+                display: flex;
+                flex-direction: column;
+                border-radius: 24px;
+                padding: 14px;
+                &.promoCard-destacada{
+                    border: 1px solid #ffc7657a;
+                    box-shadow: 0 0 30px rgba(255, 198, 101, 0.12);
+                }
+                .promoCardImagen{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+                .promoCardContenido{
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    .promoCardDestacadaEtiqueta{
+                        @include pastilla($colorSpanCards2);
+                        color: $colorTitulosSpan;
+                        font-size: 0.6rem;
+                        font-weight: 600;
+                        letter-spacing: 0.06em;
+                        align-self: flex-start;
+                        margin-top: 15px;
+                    }
+                    .promoCardEncabezado{
+                        @include flex(space-between, center, row);
+                        gap: 10px;
+                        margin-top: 15px;
+                        margin-bottom: 8px;
+                        h3{
+                            font-size: 1.15rem;
+                            font-weight: 600;
+                            margin: 0;
+                        }
+                        .promoCardEtiqueta{
+                            @include pastilla;
+                            color: $colorTitulosSpan;
+                            font-size: 0.6rem;
+                            font-weight: 500;
+                            letter-spacing: 0.06em;
+                            white-space: nowrap;
+                        }
+                    }
+                    .promoCardDescripcion{
+                        color: $colorTextos;
+                        font-weight: 500;
+                        font-size: 0.85rem;
+                        flex-grow: 1;
+                    }
+                    .promoCardPrecio{
+                        @include flex(space-between, center, row);
+                        border-top: 1px solid $colorSpanCards;
+                        padding-top: 15px;
+                        margin-bottom: 15px;
+                        h4{
+                            font-family: $fuenteTitulos;
+                            font-weight: 700;
+                            font-size: 1.6rem;
+                            color: $colorTitulosSpan;
+                            margin: 0;
+                        }
+                        span{
+                            @include pastilla($colorPastillas, 4px 8px, 10px);
+                            color: $colorTextos;
+                            font-size: 0.6rem;
+                            letter-spacing: 0.06em;
+                        }
+                    }
+                    .promoCardBoton{
+                        @extend %boton-dorado;
+                        @include flex(center, center, row);
+                        gap: 6px;
+                        padding: 10px;
+                        color: $colorTextoBotones;
+                        font-weight: 500;
+                        box-shadow: $sombraBotones;
+                        &:hover{
+                            background-color: $colorTitulosSpan;
+                            color: $colorTextoBotones;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .promosCondiciones{
+        @extend %separador-seccion;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        .condicionItem{
+            @extend %card-oscura;
+            text-align: center;
+            border-radius: 25px;
+            padding: 30px 20px;
+            .condicionIcono{
+                @include pastilla($padding: 10px, $radio: 15px);
+                display: inline-flex;
+            }
+            h3{
+                font-family: $fuenteTitulos;
+                font-size: 1.3rem;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+            p{
+                color: $colorTextos;
+                font-size: 0.85rem;
+                margin: 0;
+            }
+        }
+    }
+    .pedidosFooter{
+        margin: 50px auto 20px;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 480px){
+    .promosPagina{
+        .promosHero{
+            h1{
+                font-size: 2.5rem;
+            }
+            .promosHeroTexto br{
+                display: inline;
+            }
+        }
+        .promosGrilla .promosGrillaCards .promoCard{
+            padding: 20px;
+            .promoCardImagen{
+                height: 260px;
+            }
+            .promoCardContenido{
+                .promoCardDestacadaEtiqueta{
+                    font-size: 0.7rem;
+                }
+                .promoCardEncabezado{
+                    h3{
+                        font-size: 1.4rem;
+                    }
+                    .promoCardEtiqueta{
+                        font-size: 0.7rem;
+                    }
+                }
+                .promoCardDescripcion{
+                    font-size: 1rem;
+                }
+                .promoCardPrecio{
+                    h4{
+                        font-size: 2rem;
+                    }
+                    span{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .promosPagina{
+        .promosHero{
+            align-items: flex-start;
+            text-align: start;
+            padding-block: 100px 80px;
+            h1{
+                font-size: 4rem;
+            }
+            .promosHeroTexto{
+                font-size: 1.1rem;
+            }
+            .promosHeroHorario p{
+                font-size: 0.8rem;
+            }
+        }
+        .promosGrilla{
+            margin-top: 80px;
+            padding-bottom: 80px;
+            .promosSeccionEtiqueta{
+                text-align: start;
+            }
+            .promosSeccionTitulo{
+                text-align: start;
+                font-size: 2.5rem;
+            }
+            .promosGrillaCards{
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                .promoCard.promoCard-destacada{
+                    grid-column: 1 / -1;
+                    flex-direction: row;
+                    gap: 24px;
+                    .promoCardImagen{
+                        width: 50%;
+                        height: auto;
+                        min-height: 300px;
+                    }
+                }
+            }
+        }
+        .promosCondiciones{
+            margin-top: 80px;
+            padding-bottom: 80px;
+            .condicionItem{
+                padding: 40px 30px;
+                h3{
+                    font-size: 1.6rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .pedidosFooter{
+            margin-top: 80px;
+            padding: 60px;
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    .promosPagina .promosCondiciones{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px){
+    .promosPagina .promosGrilla .promosGrillaCards{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        .promoCard.promoCard-destacada{
+            grid-column: auto;
+            flex-direction: column;
+            gap: 0;
+            .promoCardImagen{
+                width: 100%;
+                height: 260px;
+                min-height: 0;
+            }
+        }
+    }
+}
