@@ -225,12 +225,6 @@
 .accordion .accordion-item:hover {
   border-color: rgba(255, 199, 101, 0.2274509804);
 }
-.accordion .accordion-item[open] {
-  border-color: rgba(255, 199, 101, 0.4784313725);
-}
-.accordion .accordion-item[open] .accordion-header .accordion-icon {
-  transform: rotate(180deg);
-}
 
 @media (min-width: 768px) {
   .accordion .accordion-item .accordion-header {

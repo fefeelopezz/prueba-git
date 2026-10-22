@@ -1,6 +1,6 @@
 @use '../utilites/variables' as *;
 @use '../utilites/mixins' as *;
-@use '../utilites/extends' as *;
+@use '../utilites/extends' as * ;
 
 .accordion{
     display: flex;
@@ -43,12 +43,6 @@
         }
         &:hover{
             border-color: #ffc7653a;
-        }
-        &[open]{
-            border-color: #ffc7657a;
-            .accordion-header .accordion-icon{
-                transform: rotate(180deg);
-            }
         }
     }
 }
