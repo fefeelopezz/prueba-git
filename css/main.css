@@ -134,22 +134,22 @@
 .pedidosFooter .btnFooter .wpFooter {
   background-color: #ffc665;
   box-shadow: 0 0 20px rgba(229, 169, 60, 0.25);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .pedidosFooter .btnFooter .wpFooter a {
   color: #000000;
   font-weight: 600;
 }
 .pedidosFooter .btnFooter .wpFooter:hover {
-  background-color: #e5a93c;
+  transform: translateY(-3px);
 }
 .pedidosFooter .btnFooter .igFooter {
   background-color: rgba(53, 53, 52, 0.8);
   margin-top: 10px;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 .pedidosFooter .btnFooter .igFooter:hover {
-  background-color: rgba(199, 156, 82, 0.2941176471);
+  transform: translateY(-3px);
 }
 .pedidosFooter .btnFooter .igFooter a {
   color: #ffffff;
@@ -501,13 +501,15 @@ li {
   margin-top: auto;
   padding: 14px 16px;
   background-color: rgba(53, 53, 52, 0.8);
-  transition: all 0.4s ease;
 }
 .hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard .buttonContent {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+.hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard .buttonContent svg {
+  transition: all 0.2s ease;
 }
 .hero .masElegidas .tituloElegidas .top3 .cardBp .cardContent .buttonCard .buttonContent:hover svg {
   transform: translateX(4px);

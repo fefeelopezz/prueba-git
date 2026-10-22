@@ -202,9 +202,11 @@
                             margin-top: auto;
                             padding: 14px 16px;
                             background-color: $colorSpanCards;
-                            transition: all 0.4s ease;
                             .buttonContent{
                                 @include flex(center, center, row);
+                                svg{
+                                    transition: all 0.2s ease;
+                                }
                                 &:hover{
                                     svg{
                                         transform: translateX(4px);
